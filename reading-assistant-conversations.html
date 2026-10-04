@@ -44,8 +44,8 @@
 .ebook-page{display:flex;align-items:center;justify-content:center;margin:22px 0 18px;padding:6px;color:#aaa28e;font:10px sans-serif;border-top:1px dashed #e5dfd1}.ebook-page span{background:#fffefa;padding:0 9px;margin-top:-14px}.readingarea h1[data-volume]{border-top:0;background:#eff3e9;border-radius:8px;padding:13px 15px;font-size:21px}.readingarea h2[data-volume]{font-size:18px;color:#6d775f;margin-top:24px}
 #article>p{content-visibility:auto;contain-intrinsic-size:auto 6em}
 </style>
-</head>
-<body><div class="shell"><header class="top"><div class="brand"><span class="mark">阅</span>阅伴<span class="brandtag">阅读冒险</span></div><div class="topright"><span class="date" id="date"></span><details class="book-menu"><summary class="book-switch" aria-label="打开书架">书架⌄</summary><div class="book-menu-list"><a href="reading-assistant.html">《认知觉醒》</a><a href="reading-assistant-conversations.html" aria-current="page">《与神对话》</a><a href="reading-assistant-cognitive-drive.html">《认知驱动》</a></div></details><span class="avatar">知</span></div></header>
+<script>(()=>{if(window.parent!==window||location.protocol==='file:'||new URLSearchParams(location.search).get('embedded')==='1')return;location.replace('index.html?book=dialogue')})();</script></head>
+<body><div class="shell"><header class="top"><div class="brand"><span class="mark">阅</span>阅伴<span class="brandtag">阅读冒险</span></div><div class="topright"><span class="date" id="date"></span><details class="book-menu"><summary class="book-switch" aria-label="打开书架">书架⌄</summary><div class="book-menu-list"><a href="index.html?book=cognition" target="_top">《认知觉醒》</a><a href="index.html?book=dialogue" target="_top" aria-current="page">《与神对话》</a><a href="index.html?book=drive" target="_top">《认知驱动》</a></div></details><span class="avatar">知</span></div></header>
 <div class="layout"><aside class="side"><div class="section-title">旅程</div><div class="nav active"><span class="ico">✦</span>心智森林</div><div class="library toc-library"><div class="toc-title"><div><div class="section-title">目录 · 快速定位</div><small>按章节或电子页跳转</small></div><button class="iconbtn toc-close" id="closeToc" aria-label="关闭目录">×</button></div><label class="toc-search"><span>⌕</span><input id="tocSearch" type="search" placeholder="搜索章节名称"></label><div class="toc-jump"><span>电子页</span><input id="pageNumber" type="number" min="1" value="1" aria-label="电子页码"><span>/ <b id="totalPages">1</b></span><button id="goPage">前往</button></div><div class="map-list" id="chapterMap"></div><p class="toc-note">目录页码沿用文件中的电子分页标记。不同阅读设备可能显示不同版面。</p></div></aside>
 <main class="main"><div class="hello"><div><h1>五卷对话，等你来探索</h1><p>五卷完整收录 · 每次读一点，也算前进</p></div><div class="level-pill"><span class="level-orb" id="levelOrb">1</span><span>探索者 <b id="levelName">见习观察员</b></span></div></div>
 <section class="questbar" id="questbar"><div class="quest-main"><div class="quest-icon">🧭</div><div class="quest-copy"><span class="quest-kicker">今日小任务</span><strong id="questTitle">读一小段，点亮第一颗星</strong><small id="questSubtitle">你的阅读会自动保存进度</small></div></div><div class="quest-side"><div class="quest-meter"><div class="quest-meter-label"><span id="questProgressLabel">下一颗星火</span><b id="nextMilestone">5%</b></div><div class="quest-track"><i id="questProgress"></i></div></div><button class="quest-button" id="startQuest">开始探索 →</button></div></section>
@@ -14146,4 +14146,20 @@ $('#prevLesson').onclick=()=>selectLesson(activeLesson-1);$('#nextLesson').oncli
 const dots=$('#lessonProgressDots');dots.className='dot-progress';lessonData.forEach((_,i)=>{const dot=document.createElement('i');if(i===activeLesson)dot.classList.add('active');dot.dataset.lesson=i;dot.style.cursor='pointer';dot.title=`第 ${i+1} 关`;dot.onclick=()=>selectLesson(i);dots.append(dot)});
 let timer=null,timerRemaining=600;const timerLabel=()=>`${String(Math.floor(timerRemaining/60)).padStart(2,'0')}:${String(timerRemaining%60).padStart(2,'0')}`;$('#timerBtn').onclick=()=>{if(timer){clearInterval(timer);timer=null;$('#timerBtn').textContent=`▶ 继续 ${timerLabel()}`;$('#timerBtn').classList.remove('running');toast('本轮已暂停');return}if(timerRemaining<=0)timerRemaining=600;$('#timerBtn').textContent=timerLabel();$('#timerBtn').classList.add('running');timer=setInterval(()=>{timerRemaining--;$('#timerBtn').textContent=timerLabel();if(timerRemaining<=0){clearInterval(timer);timer=null;timerRemaining=600;$('#timerBtn').textContent='◷ 10 分钟';$('#timerBtn').classList.remove('running');setXP(25,'完成 10 分钟探索');toast('任务完成，记得眨眨眼、活动一下');}},1000);toast('10 分钟探索开始')};
 window.addEventListener('scroll',updateAdventure);window.addEventListener('resize',updateAdventure);restoreNotes();const progress=localStorage.getItem('yueban-dialogues-progress');if(progress!==null)maxSeen=Math.max(maxSeen,Number(progress));rebuildToc();renderAdventure();selectLesson(Number(localStorage.getItem('yueban-dialogues-active-lesson')||0));updateAdventure();
-</script></body></html>
+</script><script>
+(()=>{
+  if(window.parent===window)return;
+  const send=(type,extra={})=>window.parent.postMessage({type,...extra},'*');
+  window.addEventListener('message',event=>{
+    if(event.source!==window.parent||!event.data)return;
+    if(event.data.type==='yueban:embed'){
+      document.body.classList.add('yueban-embedded');
+      if(!document.getElementById('yueban-embed-style')){const style=document.createElement('style');style.id='yueban-embed-style';style.textContent='.yueban-embedded .top{display:none!important}.yueban-embedded .layout{padding-top:12px!important}.yueban-embedded .shell{padding-top:0!important}';document.head.append(style)}
+    }
+    if(event.data.type==='yueban:mode'&&(event.data.mode==='raw'||event.data.mode==='learn')&&typeof window.setReaderMode==='function')window.setReaderMode(event.data.mode);
+  });
+  document.addEventListener('click',event=>{const button=event.target.closest('#rawMode,#learnMode');if(button)send('yueban:mode-changed',{mode:button.id==='rawMode'?'raw':'learn'})},true);
+  send('yueban:reader-ready',{file:decodeURIComponent(location.pathname.split('/').pop())});
+})();
+</script>
+</body></html>
