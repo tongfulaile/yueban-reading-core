@@ -51,124 +51,6 @@
 <section class="questbar" id="questbar"><div class="quest-main"><div class="quest-icon">🧭</div><div class="quest-copy"><span class="quest-kicker">今日小任务</span><strong id="questTitle">读一小段，点亮第一颗星</strong><small id="questSubtitle">你的阅读会自动保存进度</small></div></div><div class="quest-side"><div class="quest-meter"><div class="quest-meter-label"><span id="questProgressLabel">下一颗星火</span><b id="nextMilestone">5%</b></div><div class="quest-track"><i id="questProgress"></i></div></div><button class="quest-button" id="startQuest">开始探索 →</button></div></section>
 <section class="reader"><div class="reader-head"><div class="docinfo"><div class="docicon">▤</div><div><b id="docTitle">与神对话（全五卷）</b><small id="docMeta">尼尔·唐纳德·沃尔什 · 全五卷套装</small></div></div><div class="actions"><button class="iconbtn directory-button" id="directoryBtn" title="目录">☷</button><button class="iconbtn" id="pasteBtn" title="导入文本">＋</button><button class="iconbtn" id="fontBtn" title="排版设置">Aa</button><button class="iconbtn" id="focusBtn" title="专注模式">⛶</button></div></div><div class="progress"><i id="progressTop" style="width:0"></i></div>
 <div class="mode-switch"><button class="mode-tab active" id="learnMode">🎮 快速通关 <small>5 卷学习关卡</small></button><button class="mode-tab" id="rawMode">📖 原文阅读</button></div><section id="learningGame" class="learning-game"><div class="lesson-top"><span class="lesson-world">🌿 五卷对话 · 思考与实践</span><span class="lesson-time">约 4 分钟 / 卷</span></div><div class="lesson-heading"><div><span class="lesson-number" id="lessonNumber">关卡 1 / 8</span><h2 id="lessonTitle"></h2><p id="lessonAnchor"></p></div><div class="lesson-mascot" aria-label="小芽向导">🌱<i>!</i></div></div><div class="steps-row"><div class="step-pill active" id="stepRead"><span>1</span>看懂</div><i></i><div class="step-pill" id="stepQuiz"><span>2</span>答题</div><i></i><div class="step-pill" id="stepApply"><span>3</span>应用</div></div><div class="idea-panel"><div class="card-label">🧩 本关知识卡 <small>一分钟抓住重点</small></div><div id="lessonIdeas" class="idea-list"></div><div class="memory-anchor"><span>记忆锚点</span><strong id="lessonAnchorText"></strong></div></div><div class="quiz-panel"><div class="card-label">🎯 理解检定 <small>选一个最贴近本章思路的做法</small></div><p id="quizQuestion" class="quiz-question"></p><div id="quizOptions" class="quiz-options"></div><div id="quizFeedback" class="quiz-feedback" hidden></div><button class="primary quiz-submit" id="checkAnswer" disabled>确认答案</button></div><div class="apply-panel"><div class="card-label">🛠️ 现实副本 <small>把知识变成一个小动作</small></div><p id="actionPrompt" class="action-prompt"></p><textarea id="actionDraft" rows="2" placeholder="写下你准备尝试的具体一步……"></textarea><div class="action-footer"><small id="actionState">写好后保存，给自己留一张行动卡。</small><button class="quest-button" id="saveAction">保存行动卡 +20 ✨</button></div></div><div class="lesson-navigation"><button class="tool" id="prevLesson">← 上一关</button><span id="lessonProgressDots"></span><button class="quest-button" id="nextLesson" disabled>下一关 →</button></div><button class="raw-link" id="openLessonSource">想看原文？跳到本章对应位置 ↗</button></section><article class="readingarea" id="article"><h2>与神对话（全五卷）</h2>
-<h1 data-volume="1" data-page="1">与神对话 · 第一卷</h1>
-<h1 data-volume="2" data-page="1">与神对话 · 第二卷</h1>
-<h1 data-volume="3" data-page="1">与神对话 · 第三卷</h1>
-<h1 data-volume="4" data-page="1">与神为友</h1>
-<h1 data-volume="5" data-page="1">与神合一</h1>
-<h2 data-volume="1" data-page="1">导读</h2>
-<h2 data-volume="1" data-page="1">前言</h2>
-<h2 data-volume="1" data-page="1">Chapter 01</h2>
-<h2 data-volume="1" data-page="1">Chapter 02</h2>
-<h2 data-volume="1" data-page="1">Chapter 03</h2>
-<h2 data-volume="1" data-page="1">Chapter 04</h2>
-<h2 data-volume="1" data-page="1">Chapter 05</h2>
-<h2 data-volume="1" data-page="1">Chapter 06</h2>
-<h2 data-volume="1" data-page="1">Chapter 07</h2>
-<h2 data-volume="1" data-page="1">Chapter 08</h2>
-<h2 data-volume="1" data-page="1">Chapter 09</h2>
-<h2 data-volume="1" data-page="1">Chapter 10</h2>
-<h2 data-volume="1" data-page="1">Chapter 11</h2>
-<h2 data-volume="1" data-page="1">Chapter 12</h2>
-<h2 data-volume="1" data-page="1">Chapter 13</h2>
-<h2 data-volume="1" data-page="1">Chapter 14</h2>
-<h2 data-volume="1" data-page="1">致谢</h2>
-<h2 data-volume="2" data-page="1">前言</h2>
-<h2 data-volume="2" data-page="1">Chapter 01</h2>
-<h2 data-volume="2" data-page="1">Chapter 02</h2>
-<h2 data-volume="2" data-page="1">Chapter 03</h2>
-<h2 data-volume="2" data-page="1">Chapter 04</h2>
-<h2 data-volume="2" data-page="1">Chapter 05</h2>
-<h2 data-volume="2" data-page="1">Chapter 06</h2>
-<h2 data-volume="2" data-page="1">Chapter 07</h2>
-<h2 data-volume="2" data-page="1">Chapter 08</h2>
-<h2 data-volume="2" data-page="1">Chapter 09</h2>
-<h2 data-volume="2" data-page="1">Chapter 10</h2>
-<h2 data-volume="2" data-page="1">Chapter 11</h2>
-<h2 data-volume="2" data-page="1">Chapter 12</h2>
-<h2 data-volume="2" data-page="1">Chapter 13</h2>
-<h2 data-volume="2" data-page="1">Chapter 14</h2>
-<h2 data-volume="2" data-page="1">Chapter 15</h2>
-<h2 data-volume="2" data-page="1">Chapter 16</h2>
-<h2 data-volume="2" data-page="1">Chapter 17</h2>
-<h2 data-volume="2" data-page="1">Chapter 18</h2>
-<h2 data-volume="2" data-page="1">Chapter 19</h2>
-<h2 data-volume="2" data-page="1">Chapter 20</h2>
-<h2 data-volume="2" data-page="1">致谢</h2>
-<h2 data-volume="3" data-page="1">前言</h2>
-<h2 data-volume="3" data-page="1">Chapter 01</h2>
-<h2 data-volume="3" data-page="1">Chapter 02</h2>
-<h2 data-volume="3" data-page="1">Chapter 03</h2>
-<h2 data-volume="3" data-page="1">Chapter 04</h2>
-<h2 data-volume="3" data-page="1">Chapter 05</h2>
-<h2 data-volume="3" data-page="1">Chapter 06</h2>
-<h2 data-volume="3" data-page="1">Chapter 07</h2>
-<h2 data-volume="3" data-page="1">Chapter 08</h2>
-<h2 data-volume="3" data-page="1">Chapter 09</h2>
-<h2 data-volume="3" data-page="1">Chapter 10</h2>
-<h2 data-volume="3" data-page="1">Chapter 11</h2>
-<h2 data-volume="3" data-page="1">Chapter 12</h2>
-<h2 data-volume="3" data-page="1">Chapter 13</h2>
-<h2 data-volume="3" data-page="1">Chapter 14</h2>
-<h2 data-volume="3" data-page="1">Chapter 15</h2>
-<h2 data-volume="3" data-page="1">Chapter 16</h2>
-<h2 data-volume="3" data-page="1">Chapter 17</h2>
-<h2 data-volume="3" data-page="1">Chapter 18</h2>
-<h2 data-volume="3" data-page="1">Chapter 19</h2>
-<h2 data-volume="3" data-page="1">Chapter 20</h2>
-<h2 data-volume="3" data-page="1">Chapter 21</h2>
-<h2 data-volume="3" data-page="1">后记</h2>
-<h2 data-volume="3" data-page="1">致谢</h2>
-<h2 data-volume="4" data-page="1">前言</h2>
-<h2 data-volume="4" data-page="1">Chapter 01</h2>
-<h2 data-volume="4" data-page="1">Chapter 02</h2>
-<h2 data-volume="4" data-page="1">Chapter 03</h2>
-<h2 data-volume="4" data-page="1">Chapter 04</h2>
-<h2 data-volume="4" data-page="1">Chapter 05</h2>
-<h2 data-volume="4" data-page="1">Chapter 06</h2>
-<h2 data-volume="4" data-page="1">Chapter 07</h2>
-<h2 data-volume="4" data-page="1">Chapter 08</h2>
-<h2 data-volume="4" data-page="1">Chapter 09</h2>
-<h2 data-volume="4" data-page="1">Chapter 10</h2>
-<h2 data-volume="4" data-page="1">Chapter 11</h2>
-<h2 data-volume="4" data-page="1">Chapter 12</h2>
-<h2 data-volume="4" data-page="1">Chapter 13</h2>
-<h2 data-volume="4" data-page="1">Chapter 14</h2>
-<h2 data-volume="4" data-page="1">Chapter 15</h2>
-<h2 data-volume="4" data-page="1">Chapter 16</h2>
-<h2 data-volume="4" data-page="1">Chapter 17</h2>
-<h2 data-volume="4" data-page="1">Chapter 18</h2>
-<h2 data-volume="4" data-page="1">Chapter 19</h2>
-<h2 data-volume="4" data-page="1">Chapter 20</h2>
-<h2 data-volume="4" data-page="1">Chapter 21</h2>
-<h2 data-volume="4" data-page="1">后记</h2>
-<h2 data-volume="4" data-page="1">致谢</h2>
-<h2 data-volume="5" data-page="1">前言</h2>
-<h2 data-volume="5" data-page="1">序章</h2>
-<h2 data-volume="5" data-page="1">第一部分 人类的十大幻觉</h2>
-<h2 data-volume="5" data-page="1">1.需求的幻觉</h2>
-<h2 data-volume="5" data-page="1">2.失败的幻觉</h2>
-<h2 data-volume="5" data-page="1">3.分离的幻觉</h2>
-<h2 data-volume="5" data-page="1">4.匮乏的幻觉</h2>
-<h2 data-volume="5" data-page="1">5.资格的幻觉</h2>
-<h2 data-volume="5" data-page="1">6.审判的幻觉</h2>
-<h2 data-volume="5" data-page="1">7.天谴的幻觉</h2>
-<h2 data-volume="5" data-page="1">8.条件的幻觉</h2>
-<h2 data-volume="5" data-page="1">9.等级的幻觉</h2>
-<h2 data-volume="5" data-page="1">10.无知的幻觉</h2>
-<h2 data-volume="5" data-page="1">第二部分 掌握幻觉</h2>
-<h2 data-volume="5" data-page="1">11.教育好你们的孩子</h2>
-<h2 data-volume="5" data-page="1">12.识破幻觉</h2>
-<h2 data-volume="5" data-page="1">13.理解幻觉的功能</h2>
-<h2 data-volume="5" data-page="1">14.思考幻觉</h2>
-<h2 data-volume="5" data-page="1">15.利用幻觉</h2>
-<h2 data-volume="5" data-page="1">16.再造现实</h2>
-<h2 data-volume="5" data-page="1">第三部分 与内在造物主相遇</h2>
-<h2 data-volume="5" data-page="1">17.控制你的身体</h2>
-<h2 data-volume="5" data-page="1">18.控制你的情绪</h2>
-<h2 data-volume="5" data-page="1">19.培育自觉</h2>
-<h2 data-volume="5" data-page="1">20.造物主的消息</h2>
-<h2 data-volume="5" data-page="1">21.把握恩宠时刻</h2>
 <p data-page="1">总目录</p>
 <p data-page="1">与神对话1</p>
 <p data-page="1">与神对话2</p>
@@ -176,6 +58,7 @@
 <p data-page="1">与神为友</p>
 <p data-page="1">与神合一</p>
 <div class="ebook-page" id="mobi-page-2" data-page="2"><span>第 2 页</span></div>
+<h1 data-volume="1" data-page="2">与神对话 · 第一卷</h1>
 <div class="ebook-page" id="mobi-page-3" data-page="3"><span>第 3 页</span></div>
 <p data-page="3">目录</p>
 <p data-page="3">导读</p>
@@ -221,7 +104,7 @@
 <p data-page="5">赣版权登字—01—2015—186</p>
 <p data-page="5">版权所有 侵权必究</p>
 <div class="ebook-page" id="mobi-page-6" data-page="6"><span>第 6 页</span></div>
-<p data-page="6">导读</p>
+<h2 data-volume="1" data-page="6">导读</h2>
 <p data-page="6">六年前，我几乎每天都在焦虑中醒来。表面的原因是经济上的捉襟见肘。我已经在前一年（也就是2007年）成为所谓的自由职业者，以翻译和写作为生。正如大家所知道的，这碗饭并不容易吃，稿酬原本就微薄，付款方还经常以各种理由拖欠。我对物质的要求固然很低，但生活在百物昂贵的上海，兼要履行部分赡养家人的责任，所以总是感到入不敷出。更深的原因是生活上的彷徨挣扎。当时我已近而立之年，大学毕业后浪迹沪上数载，先后换过几份工作，却始终不如意，最后干脆辞职了事。然而自由职业这条路很少有人走，我缺乏可以借鉴的例子，并不知道未来会怎样，日常难免兴起“读书击剑两无成”的悲叹。</p>
 <p data-page="6">就是在这样的窘境中，有位相识多年的朋友在外面吃饭的时候问我：“你替出版社翻译那么多畅销书，拿到的钱却很少，何不考虑自己做出版？”我想这是个值得尝试的选择。这位朋友说，他看过一本叫做《与神对话》的书，觉得非常好，提议将其作为我们公司的第一个产品。我回家后在网上找到这本书的英文原版，瞄了几眼之后大为震惊，随即迫不及待地连夜读完。这次阅读立竿见影地治愈了我的焦虑，以及其他诸如怀才不遇、自怨自艾、愤世嫉俗等负面情绪。因为《与神对话》让我顿悟，原来我的生活如此困顿，并非由于上面提到的两个原因，而是别有其他可以通过扭转自己的认识而消除的根源。</p>
 <p data-page="6">说起来真是机缘巧合，大陆每年出版的翻译图书数以万计，众多出版机构为了获得外国——尤其是英美——畅销书的权利不惜抢破头，但唐纳德·尼尔·沃尔什这部曾经雄踞《纽约时报》畅销书排行榜137周、在美国销量高达数百万册的代表作在国内竟然无人问津。那位朋友与我合伙注册的公司幸运地买下了中文简体字版权，我翻译的版本顺利通过政府部门审查，顺利在2009年夏天和读者见面。</p>
@@ -276,7 +159,7 @@
 <p data-page="8">我对无畏的</p>
 <p data-page="8">第一次经验。</p>
 <div class="ebook-page" id="mobi-page-9" data-page="9"><span>第 9 页</span></div>
-<p data-page="9">前言</p>
+<h2 data-volume="1" data-page="9">前言</h2>
 <p data-page="9">你将要拥有非凡的经验。你将要与神进行对话。是的，是的。我知道……那是不可能的。你可能会认为（或者曾经被教导） 那是不可能的 。人们可以对神说话，这没问题，但不能 与神交谈 。我想说的是，神不会 对你说话 ，是吧？至少不会以这种普通的、日常的交谈形式！</p>
 <p data-page="9">从前我也曾经这么想过。然后这本书遇到了我。我是说真的。这本书不是 由我 写出来的，是它遇到了我。当你阅读它的时候，它也将会遇到你，因为 我们都被引领到我们准备好认识的真相前 。</p>
 <p data-page="9">如果我对所有这些保持沉默，我的生活可能会轻松很多。然而它遇到我，并非要我对它保持沉默。不管这本书可能给我带来什么麻烦（比如说被称为神棍、骗子、没有亲身实践过这些真理的伪君子，或者——也许这更糟糕——圣人），现在我已经不可能停止这个进程。我也不希望停止。我曾经有许多机会可以抛开这整本书，可是我没有利用它们。我已经决定了，关于这本书，我要听从的是我的本能对我说的话，而非世上大多数人将会对我说的话。</p>
@@ -293,7 +176,7 @@
 <p data-page="9">我知道那是神希望我们所有人去做的。</p>
 <p data-page="9">尼尔·唐纳德·沃尔什 俄勒冈州中点市 1994年圣诞节</p>
 <div class="ebook-page" id="mobi-page-10" data-page="10"><span>第 10 页</span></div>
-<p data-page="10">Chapter 01</p>
+<h2 data-volume="1" data-page="10">Chapter 01</h2>
 <p data-page="10">1992年春天，我记得是在复活节前后，我的生活中出现了超凡的现象。神开始与你对话。通过我。</p>
 <p data-page="10">容我解释。</p>
 <p data-page="10">那段日子我非常难过，生活、工作和感情均不如意，我觉得我的人生真是彻头彻尾的失败。当时我有个养成多年的习惯，就是把我的想法写到通常不会寄出的信里，所以我拿起我信赖的黄色便笺本，开始倾吐我的感受。</p>
@@ -790,7 +673,7 @@
 <p data-page="10">所以来吧。问我任何问题。 无论什么问题都可以。 我将会想办法回答你。我将会用整个宇宙来做这件事。所以请谨慎一点。这本书远非我唯一的工具。你可以提出问题，然后 放下这本书 。但要去观察，去聆听。下一首你听到的歌曲的歌词。下一篇你读的文章里的信息。下一部你看的电影的情节。下一个你遇到的人的闲聊。或者下一条河流、下一片海洋、下一阵拂过你耳朵的和风的低吟—— 所有这些都是我的工具 ；所有这些地点我都能去到。如果你愿意听，我将会与你说话。如果你愿意邀请我，我将会来找你。到时我将会让你看到，我一直都在。</p>
 <p data-page="10">以各种各样的方式。</p>
 <div class="ebook-page" id="mobi-page-11" data-page="11"><span>第 11 页</span></div>
-<p data-page="11">Chapter 02</p>
+<h2 data-volume="1" data-page="11">Chapter 02</h2>
 <p data-page="11">你必将指引我生活的道路：</p>
 <p data-page="11">在你面前是圆满的欢欣，</p>
 <p data-page="11">在你的右手是</p>
@@ -897,7 +780,7 @@
 <p data-page="11">我没想过这个问题。刚开始的时候，我只是得到那些问题的答案；只想终结我的挫折，只想结束我的追寻。</p>
 <p data-page="11">很好。那么别再质疑你的动机了（你总是不停地这么做），让我们继续来对话吧。</p>
 <div class="ebook-page" id="mobi-page-12" data-page="12"><span>第 12 页</span></div>
-<p data-page="12">Chapter 03</p>
+<h2 data-volume="1" data-page="12">Chapter 03</h2>
 <p data-page="12">嗯，我的疑问有百个。千个。百万个。问题在于，有时候我不知从何说起。</p>
 <p data-page="12">把这些疑问全列出来。 随便从哪里 开始都可以。来吧，现在就来。把你想到的疑问列出来。</p>
 <p data-page="12">好吧。有些会显得非常简单，非常普通。</p>
@@ -1027,7 +910,7 @@
 <p data-page="12">你是善良和同情和悲悯和觉悟。你是和平和欢乐和光芒。你是宽恕和耐心，力量和勇气，危难时的仗义者，哀伤时的安慰者，创痛时的疗愈者，迷茫时的指引者。你是最深的智慧和最高的真相，最伟大的和平和最美好的爱。你是这些。在生活中，你偶尔会认识到你自己是这些。</p>
 <p data-page="12">请选择从现在开始永远地认识到你自己是这些。</p>
 <div class="ebook-page" id="mobi-page-13" data-page="13"><span>第 13 页</span></div>
-<p data-page="13">Chapter 04</p>
+<h2 data-volume="1" data-page="13">Chapter 04</h2>
 <p data-page="13">哇！你启发了我！</p>
 <p data-page="13">嗯，如果神不能启发你，那还有谁他妈的能呢？</p>
 <p data-page="13">你总是这么喜欢开玩笑吗？</p>
@@ -1083,7 +966,7 @@
 <p data-page="13">谢谢你。从来没有人如此清楚地把这个过程展现给我。要是做起来就像说起来这么容易就好了；但现在我想我至少清楚地理解这个过程啦。</p>
 <p data-page="13">很好，如果你需要复习，我们可以用几辈子的时间。</p>
 <div class="ebook-page" id="mobi-page-14" data-page="14"><span>第 14 页</span></div>
-<p data-page="14">Chapter 05</p>
+<h2 data-volume="1" data-page="14">Chapter 05</h2>
 <p data-page="14">哪条路才是真正通往神的道路？有些瑜伽术士说要经过苦行，是这样的吗？至于所谓的“受苦”又该做何解呢？许多禁欲主义者认为受苦和出家是通往神的路，是这样的吗？许多宗教教导我们，“做个好人”能让我们上天堂，是这样的吗？也有些新时代运动的信徒认为，我们可以随心所欲地行事，违背或忽略任何规则，漠视任何传统的规训，尽情放纵自己，然后就能达到涅槃的境界，是这样的吗？哪个是对的呢？是遵守严厉的道德规范，还是随心所欲地行事？哪个是对的呢？是秉持传统的价值观，还是随机应变、率性而为？哪个是对的呢？是信奉十大戒律，还是大光明七阶？</p>
 <p data-page="14">你非得认为通往神的道路非此即彼，是吧……难道这些不能全都是吗？</p>
 <p data-page="14">我不知道啊。我在问你呢。</p>
@@ -1195,7 +1078,7 @@
 <p data-page="14">嗯，其实你们不用担心的。但小心点 对你们有好处 。只要注意你现在的身份、你正在做的事情、你如今拥有的东西，并看看它是否对你有用就可以了。</p>
 <p data-page="14">生活的意义不在于抵达任何地方——而在于发现你在那里，向来在那里，已经在那里。你永远处在纯粹创造的时刻中。因此生活的意义就是创造——创造出你的身份和本质，然后去经验它。</p>
 <div class="ebook-page" id="mobi-page-15" data-page="15"><span>第 15 页</span></div>
-<p data-page="15">Chapter 06</p>
+<h2 data-volume="1" data-page="15">Chapter 06</h2>
 <p data-page="15">关于苦难呢？受苦是通往神的道路吗？有人说它是 唯一 的路。</p>
 <p data-page="15">我并不乐意见到苦难，那些说我乐意的人其实不认识我。</p>
 <p data-page="15">苦难是人类经验的多余要素。它不仅是多余的，而且还是愚蠢而难受的，有害于你的健康。</p>
@@ -1240,7 +1123,7 @@
 <p data-page="15">然而为了帮助你走出困境，我愿意告诉你这个： 不要 相信我说的话。只要把它付诸实践。只要去 经验 它。如果你想确立别的人生观，无论那是什么，请去实践它。然后呢，试图从你的经验中找到你的真相。</p>
 <p data-page="15">有一天，假如你们拥有很大的勇气，你们将会经验到别的世界，在那个世界里，人们认为做爱比作战好。到那天你们将会欢乐。</p>
 <div class="ebook-page" id="mobi-page-16" data-page="16"><span>第 16 页</span></div>
-<p data-page="16">Chapter 07</p>
+<h2 data-volume="1" data-page="16">Chapter 07</h2>
 <p data-page="16">生活太可怕了。太难以捉摸了。我希望事情能够更清楚。</p>
 <p data-page="16">生活没什么可怕的，前提是你不执着于结果。</p>
 <p data-page="16">你说的是不想要任何东西吗？</p>
@@ -1338,7 +1221,7 @@
 <p data-page="16">可是我还有许多问题想问你，还有许多事情想了解。</p>
 <p data-page="16">没错。刚开始的时候你列出了许多问题。我们再回过头去看看？</p>
 <div class="ebook-page" id="mobi-page-17" data-page="17"><span>第 17 页</span></div>
-<p data-page="17">Chapter 08</p>
+<h2 data-volume="1" data-page="17">Chapter 08</h2>
 <p data-page="17">我要什么时候才能学会得心应手地处理各种关系？是否有办法可以在那些关系中找到快乐？那些关系非得总是如此棘手吗？</p>
 <p data-page="17">关于那些关系，你没有什么需要学的。你只要展示你已有的知识就够啦。</p>
 <p data-page="17">确实 有一种办法可以让你在各种关系中找到快乐，那就是根据这些关系原本的目标、而非你设定的目标去使用它们。</p>
@@ -1588,7 +1471,7 @@
 <p data-page="17">“你真行，”他的朋友宽容地说，“可是你知道的，没有人真的知道神将会说些什么。”</p>
 <p data-page="17">“嗯，”这人笑着说， “等我写完你就知道啦。”</p>
 <div class="ebook-page" id="mobi-page-18" data-page="18"><span>第 18 页</span></div>
-<p data-page="18">Chapter 09</p>
+<h2 data-volume="1" data-page="18">Chapter 09</h2>
 <p data-page="18">你也许会认为这是很容易做到的，这件获得“你的真实身份”的事情，但它将会是你在你的生活中遇到的最大难题。实际上，你也许永远也做不到。做到的人很少。这不是一辈子能做到的事情。也不是几辈子能做到的事情。</p>
 <p data-page="18">那为什么要我们去尝试呢？为什么要我们过这种没有尽头的苦日子？谁需要它啊？既然生活无非是一次不会产生特殊后果的无意义练习，一场你无论怎么玩也不可能输的游戏，一个令所有人最终都达到相同终点的过程，那你为什么不只是让我们快乐地享受这种生活就好了呢？你说没有地狱，也没有惩罚，不可能会输，那你为什么要我们先不断地尝试，然后才能够赢呢？既然你说我们努力要去的地方是那么难以抵达，那为什么还要让我们去呢？为什么不让我们抛开所有这些有关神和“获得你的真实身份”的事务，轻松自在地享受我们的美好时光就好了呢？</p>
 <p data-page="18">我的孩子，看来你真的很沮丧……</p>
@@ -1711,11 +1594,11 @@
 <p data-page="18">我想我是这么认为的。</p>
 <p data-page="18">那么，继续成长吧，我的孩子。继续变化。继续确定你接下来最理想的身份是什么。加油！加油！这是我们——你和我——为之奋斗的神的工作。所以请加油！</p>
 <div class="ebook-page" id="mobi-page-19" data-page="19"><span>第 19 页</span></div>
-<p data-page="19">Chapter 10</p>
+<h2 data-volume="1" data-page="19">Chapter 10</h2>
 <p data-page="19">我爱你，你知道吗？</p>
 <p data-page="19">我知道。我也爱你。</p>
 <div class="ebook-page" id="mobi-page-20" data-page="20"><span>第 20 页</span></div>
-<p data-page="20">Chapter 11</p>
+<h2 data-volume="1" data-page="20">Chapter 11</h2>
 <p data-page="20">我想回到我提的那些问题。每个问题我都想知道更详细的解答。我知道，光是关系那个问题，我们就能写整本书。但要是那样的话，我就得不到其他问题的答案啦。</p>
 <p data-page="20">将会有其他时刻，其他地方。甚至会有其他书籍。我与你同在。让我们继续吧。等后面有时间，我们再来看看关系的问题。</p>
 <p data-page="20">好的。那么，我的下一个问题是：我在生活中为何总是赚不到足够的钱？我的余生注定要如此穷困吗？是什么导致我无法实现我在这方面的全部潜能呢？</p>
@@ -1803,7 +1686,7 @@
 <p data-page="20">就算不是也应该是。新思维是你唯一的机会。它是你唯一的真正机会，让你能够向你的真实身份进化和增长，能够让你获得你的真实身份。</p>
 <p data-page="20">此刻你的头脑充塞着陈旧思维。这些思维不仅陈旧，而且绝大多数来自别人。是时候 改变你的某些思维 啦。这是至关重要的。这就是进化的一切含义。</p>
 <div class="ebook-page" id="mobi-page-21" data-page="21"><span>第 21 页</span></div>
-<p data-page="21">Chapter 12</p>
+<h2 data-volume="1" data-page="21">Chapter 12</h2>
 <p data-page="21">我为什么不能去做我在生活中真正想做的事情，而又能解决生计问题呢？</p>
 <p data-page="21">什么？你是说你真的想要你的生活充满 乐趣 ，同时还能赚到养命钱吗？老兄， 你 这是在做梦！</p>
 <p data-page="21">什么？……</p>
@@ -2000,7 +1883,7 @@
 <p data-page="21">所有人都能够热爱任何事情，只要他们明白他们在做的是什么事，以及为什么要做那些事。</p>
 <p data-page="21">没有人会做任何他不想做的事情。</p>
 <div class="ebook-page" id="mobi-page-22" data-page="22"><span>第 22 页</span></div>
-<p data-page="22">Chapter 13</p>
+<h2 data-volume="1" data-page="22">Chapter 13</h2>
 <p data-page="22">我要怎样才能解决那些我遇到的健康问题呢？我前三辈子饱受许多慢性疾病的折磨。这些疾病为什么在 今生 还不消失呢？</p>
 <p data-page="22">首先，让我们来搞清楚一件事。你爱它们。反正你爱大多数疾病。你曾经出色地利用它们来获得自怜的感觉和别人的关注。</p>
 <p data-page="22">只有在极少数情况下你才不爱它们，那只是因为它们已经变得太严重。比你创造它们时所设想的要严重得多。</p>
@@ -2179,7 +2062,7 @@
 <p data-page="22">那很好，因为我要告诉你：你已经是神。 你只是不知道这一点而已。</p>
 <p data-page="22">难道我没说过“你就是神”吗？</p>
 <div class="ebook-page" id="mobi-page-23" data-page="23"><span>第 23 页</span></div>
-<p data-page="23">Chapter 14</p>
+<h2 data-volume="1" data-page="23">Chapter 14</h2>
 <p data-page="23">好啦，我已经向你解释了它的一切。生命。它的运作方式。它的理由和目标。还有什么需要我解答的吗？</p>
 <p data-page="23">我没有什么想问的了。我对这次难以置信的对话充满了感激。它真是包罗万象。回头去看我最早提出的那些问题，我发现我们已经解决了前五个，它们分别和生活、关系、金钱、职业和健康有关。原本我还列出了其他问题，这你也知道的，但不知道怎么回事，已经进行的讨论使得那些问题变得无足轻重。</p>
 <p data-page="23">是的。不过呢，你问都问了。让我们快速地逐一回答它们吧。我们很快就要看完这份资料啦……</p>
@@ -2266,7 +2149,7 @@
 <p data-page="23">和光明。</p>
 <p data-page="23">及爱。</p>
 <div class="ebook-page" id="mobi-page-24" data-page="24"><span>第 24 页</span></div>
-<p data-page="24">致谢</p>
+<h2 data-volume="1" data-page="24">致谢</h2>
 <p data-page="24">首先，我最想指出本书的一切来源是生活的一切，以及生活本身。</p>
 <p data-page="24">其次，我想要感谢我的灵魂导师，他们包括了所有宗教的圣徒和智者。</p>
 <p data-page="24">第三，我非常清楚地知道，我们所有人都能列出一张名单，名单上的人曾经对我们的生活造成的影响极其有意义和极其深远，乃至我们无法对其进行分类或者描述；这些人与我们分享他们的智慧，把他们的真相说给我们听，以他们无尽的耐心容忍我们的毛病和怪僻，并且忽略所有这些缺陷，只看到我们身上最好的优点。这些人在接纳我们的同时，也拒绝接受我们的某些部分，他们知道我们并没有真正去选择这些部分，从而促使我们成长，促使我们从某种意义上变得越来越优秀。</p>
@@ -2280,6 +2163,7 @@
 <div class="ebook-page" id="mobi-page-25" data-page="25"><span>第 25 页</span></div>
 <p data-page="25">与神对话</p>
 <div class="ebook-page" id="mobi-page-26" data-page="26"><span>第 26 页</span></div>
+<h1 data-volume="2" data-page="26">与神对话 · 第二卷</h1>
 <div class="ebook-page" id="mobi-page-27" data-page="27"><span>第 27 页</span></div>
 <p data-page="27">目录</p>
 <p data-page="27">前言</p>
@@ -2347,7 +2231,7 @@
 <p data-page="30">但是且慢。我们彼此的往来尚未结束。</p>
 <p data-page="30">我们的关系仍有发展的余地。</p>
 <div class="ebook-page" id="mobi-page-31" data-page="31"><span>第 31 页</span></div>
-<p data-page="31">前言</p>
+<h2 data-volume="2" data-page="31">前言</h2>
 <p data-page="31">我们生活的世界变得和以前不同了。事情不再是这本书最早出版时那个样子。然而，书中没有哪个字是过时的。事实正好相反。这本书在今天仍然是超前的。可以肯定的是，它和现实的相关性比以前更强。</p>
 <p data-page="31">已经有数以十万计的读者看过这本书，他们使它登上了《纽约时报》畅销书排行榜。这些读者说，在《与神对话》三部曲里面，这本书肯定是最具争议性的。《与神对话》第一卷探讨的是个人生活，也处理了许多与此相关的问题。而这本书谈论的则是这个星球上的集体生活，触及许多全球议题，深入地探索了各种和人类共同体的群体经验有关的主题。它的出现恰逢其时。</p>
 <p data-page="31">过去几年来发生了许多事情：极其残暴的塔利班政府在阿富汗兴起又衰落；以色列和巴勒斯坦在中东地区的冲突仍在延续，而且似乎永无止境；恐怖主义活动在世界各地频频出现，美国在2001年9月11日遭受了袭击；美国军队入侵了伊拉克，至今余波未息。所有这些无不表明，我们人类已经到达了可持续发展的最边缘。总之，我们不能继续这样下去。</p>
@@ -2364,7 +2248,7 @@
 <p data-page="31">本书通篇都在邀请我们那么做。只那么做。现在，在本书完稿十年之后，我们也更加愿意勇敢地去那么做。</p>
 <p data-page="31">尼尔·唐纳德·沃尔什 阿什兰市，俄勒冈州 2003年4月</p>
 <div class="ebook-page" id="mobi-page-32" data-page="32"><span>第 32 页</span></div>
-<p data-page="32">Chapter 01</p>
+<h2 data-volume="2" data-page="32">Chapter 01</h2>
 <p data-page="32">谢谢你来。谢谢你来到这里。</p>
 <p data-page="32">是的，你是依约而来，但你也可以不出现的。你可以决定别来。然而你来了，在约定的时刻，到约定的地方，让这本书落到你手里。所以谢谢你。</p>
 <p data-page="32">如果你现在是无意识地这么做，不知道自己在干什么，为什么来到这里，那么你也许会有点困惑，也许需要一点解释。</p>
@@ -2438,7 +2322,7 @@
 <p data-page="32">我想要到达大师境界。要怎样才能做到呢？</p>
 <p data-page="32">继续阅读这本书。那正是我想要把你带到的地方。</p>
 <div class="ebook-page" id="mobi-page-33" data-page="33"><span>第 33 页</span></div>
-<p data-page="33">Chapter 02</p>
+<h2 data-volume="2" data-page="33">Chapter 02</h2>
 <p data-page="33">我不知道这本书的内容将会是什么。我不知道从何开始。</p>
 <p data-page="33">我们有时间。</p>
 <p data-page="33">我们能有多少时间呢？从第一章到这里，就已经花了我五个月。我知道看这本书的人会以为这些文字是连续不断地写下的。他们并没有意识到这本书的第三十二段和第三十三段之间隔了二十个星期。他们并不知道有时候我要隔半年才能再次产生灵感。我们到底需要花多少时间啊？</p>
@@ -2658,7 +2542,7 @@
 <p data-page="33">无论对你而言有效的是什么，无论能使之发生的是什么——无论是哪种仪式、庆典、展示、冥想、思维、歌曲、话语，只要它能让你和我“复合”——去做吧。</p>
 <p data-page="33">去做吧，为忆起我，为重归于我。</p>
 <div class="ebook-page" id="mobi-page-34" data-page="34"><span>第 34 页</span></div>
-<p data-page="34">Chapter 03</p>
+<h2 data-volume="2" data-page="34">Chapter 03</h2>
 <p data-page="34">那么，现在来回顾和简述你刚才说过的话，我似乎领悟到如下这些道理：</p>
 <p data-page="34">你看怎么样？</p>
 <p data-page="34">非常好！看上去很好。你领悟到啦。那么，你会依照这些道理去生活吗？</p>
@@ -2904,7 +2788,7 @@
 <p data-page="34">你确实没有嘲弄任何人，只是实话实说而已。那就像你们美国的总统哈里·杜鲁门曾经说过的话。人们说：“哈里，送他们下地狱吧！”哈里回答说：“不用我送啊。我只要实话实说，那听起来就像地狱。”</p>
 <p data-page="34">[1] 译者注：作者在此强调的是基督神学中天堂地狱论的虚无性，并非认为作为历史人物的希特勒是值得赞赏的。实际上，希特勒是法西斯独裁者，他对犹太人发起的大屠杀是人类历史上最黑暗的事件之一，这一点无论作者、译者，还是出版方，都没有任何异议。</p>
 <div class="ebook-page" id="mobi-page-35" data-page="35"><span>第 35 页</span></div>
-<p data-page="35">Chapter 04</p>
+<h2 data-volume="2" data-page="35">Chapter 04</h2>
 <p data-page="35">老兄，我们真是离题万里啊。我们开始讨论的是时间，最终却谈起了有组织的宗教。</p>
 <p data-page="35">是啊，与神对话就是这样子的。很难给交谈的内容套上条条框框。</p>
 <p data-page="35">我来看看能否总结出你在第三章中谈到的要点。</p>
@@ -2997,7 +2881,7 @@
 <p data-page="35">我告诉你吧：神之爱和神之同情、神之智慧和神之宽恕、神之用心和神之意图宏大得足以包容最邪恶的罪行和最邪恶的罪人。</p>
 <p data-page="35">你也许并不同意这个观点，但没有关系。你刚刚才学到了你来这里要发现的道理。</p>
 <div class="ebook-page" id="mobi-page-36" data-page="36"><span>第 36 页</span></div>
-<p data-page="36">Chapter 05</p>
+<h2 data-volume="2" data-page="36">Chapter 05</h2>
 <p data-page="36">第一卷中你曾做出承诺，要在第二卷解释许许多多的事情，比如说时间和空间、爱和战争、善和恶，以及这个星球最高层次的地缘政治因素。你也承诺要更好地、更详细地解释人类的性经验。</p>
 <p data-page="36">是的，我做出过这样的承诺。</p>
 <p data-page="36">第一卷解决的问题比较具体，跟个人的生活有关。第二卷要处理的是你们在这个星球上的集体生活。第三卷是这三部曲中的终篇，它要阐释的是最伟大的真相：整个宇宙的情况，以及灵魂的旅程。总而言之，我将为你们提供从穿鞋到理解宇宙所需的最好建议和信息。</p>
@@ -3110,7 +2994,7 @@
 <p data-page="36">所有这些都蕴含于一个简单的真相：</p>
 <p data-page="36">我们是一体。</p>
 <div class="ebook-page" id="mobi-page-37" data-page="37"><span>第 37 页</span></div>
-<p data-page="37">Chapter 06</p>
+<h2 data-volume="2" data-page="37">Chapter 06</h2>
 <p data-page="37">跟我讲讲空间吧。</p>
 <p data-page="37">空间是展现出来的时间。</p>
 <p data-page="37">实际上，空间——纯粹的、“虚无的”、其间什么都没有的空间——这种东西是不存在的。万物皆是物。即使最“虚无”的空间也充满了稀薄的气体，这些气体覆盖着的区域无限宽广，乃至它们似乎是不存在的。</p>
@@ -3162,7 +3046,7 @@
 <p data-page="37">我现在不想换到其他话题。我希望深入地探讨这个性别问题。在上一卷的结尾，你承诺要更加详细地讨论男女之间的性事。</p>
 <p data-page="37">是的，我想现在是我们——你和我——谈论性的时候了。</p>
 <div class="ebook-page" id="mobi-page-38" data-page="38"><span>第 38 页</span></div>
-<p data-page="38">Chapter 07</p>
+<h2 data-volume="2" data-page="38">Chapter 07</h2>
 <p data-page="38">你为什么创造了两性呢？你认为我们只能通过这种方式繁殖吗？我们应该怎样对待这种叫作性生活的美妙经验呢？</p>
 <p data-page="38">当然不要觉得羞耻。不要觉得内疚和害怕。</p>
 <p data-page="38">因为羞耻并非高尚，内疚并非善良，害怕并非光荣。</p>
@@ -3371,7 +3255,7 @@
 <p data-page="38">因为神便是全体，神便是一切，除了神，宇宙间别无所有；而一切存在于过去，存在于如今，亦将存在于将来，你们的世界将永无末日。</p>
 <p data-page="38">阿门。</p>
 <div class="ebook-page" id="mobi-page-39" data-page="39"><span>第 39 页</span></div>
-<p data-page="39">Chapter 08</p>
+<h2 data-volume="2" data-page="39">Chapter 08</h2>
 <p data-page="39">和你谈话真有意思，因为你给出的问题总是比答案多。除了性，我对政治也有许多疑问。</p>
 <p data-page="39">有人说性和政治是一回事，在政治领域，你们所做的无非就是……</p>
 <p data-page="39">等等！你不会又想爆粗口吧？</p>
@@ -3546,7 +3430,7 @@
 <p data-page="39">但我们都喜欢被需要的感觉。</p>
 <p data-page="39">那就别再喜欢。去喜欢不被需要的感觉——因为你们能够馈赠给某个人的最佳礼物，就是那种不需要你、无求于你的本领和力量。</p>
 <div class="ebook-page" id="mobi-page-40" data-page="40"><span>第 40 页</span></div>
-<p data-page="40">Chapter 09</p>
+<h2 data-volume="2" data-page="40">Chapter 09</h2>
 <p data-page="40">好啦。我准备换个话题啦。你答应过我要谈论地球上某些宏观的情况，上次你谈到美国的现状，我希望你能就这个话题继续展开。</p>
 <p data-page="40">好啊，没问题。我想用第二卷来讨论你们星球面临的几个大问题。而最大的问题，莫过于你们对后代的教育。</p>
 <p data-page="40">看来我们在这方面做得不是很好，对吧……我能从你的口气中听出来。</p>
@@ -3745,7 +3629,7 @@
 <p data-page="40">是吧。我觉得政治领域也需要推倒重建。</p>
 <p data-page="40">那当然。</p>
 <div class="ebook-page" id="mobi-page-41" data-page="41"><span>第 41 页</span></div>
-<p data-page="41">Chapter 10</p>
+<h2 data-volume="2" data-page="41">Chapter 10</h2>
 <p data-page="41">我等了很久啦。自从你告诉我第二卷将会谈论各种全球性问题，我就想到你会谈到这些。那么，在我们审视人类政治之初，我能问一个看起来可能显得特别低级的问题吗？</p>
 <p data-page="41">问题没有高低贵贱之分。问题就像人一样。</p>
 <p data-page="41">你说得真好。那我问啦：实行以本国既得利益为基础的外交政策有错吗？</p>
@@ -3832,7 +3716,7 @@
 <p data-page="41">你说的是全球统一的政府吗？</p>
 <p data-page="41">是的。</p>
 <div class="ebook-page" id="mobi-page-42" data-page="42"><span>第 42 页</span></div>
-<p data-page="42">Chapter 11</p>
+<h2 data-volume="2" data-page="42">Chapter 11</h2>
 <p data-page="42">你说过会在第二卷谈论当今地球面临的宏观地缘政治话题（而第一卷谈论的主要是与个人相关的话题），但我没想到你的言词会这么激烈。</p>
 <p data-page="42">这世界不能再自我欺骗啦，要觉醒过来，要发现人类唯一的问题就在于缺乏爱。</p>
 <p data-page="42">爱带来宽容，宽容带来和平。狭隘制造战争，并对难以忍受的惨景冷漠处之。</p>
@@ -3956,7 +3840,7 @@
 <p data-page="42">在你的敌人面前，我为你准备了宴席。我将会用油膏涂你的头。你的杯将会满溢。</p>
 <p data-page="42">当然，礼物和慈爱将会陪伴你终生，你将会安居在我的殿中，和我的心里，直到永远。</p>
 <div class="ebook-page" id="mobi-page-43" data-page="43"><span>第 43 页</span></div>
-<p data-page="43">Chapter 12</p>
+<h2 data-volume="2" data-page="43">Chapter 12</h2>
 <p data-page="43">这太好啦。你刚才说得太好啦。我希望世人能听到。我希望世人将会理解，将会相信。</p>
 <p data-page="43">这本书有助于实现这个目标。你正在为此而出力。所以你正在为提升集体意识尽心尽力，做出贡献。每个人都必须为此而努力。</p>
 <p data-page="43">是的。</p>
@@ -4175,7 +4059,7 @@
 <p data-page="43">我啊？</p>
 <p data-page="43">要不然还有谁呢？</p>
 <div class="ebook-page" id="mobi-page-44" data-page="44"><span>第 44 页</span></div>
-<p data-page="44">Chapter 13</p>
+<h2 data-volume="2" data-page="44">Chapter 13</h2>
 <p data-page="44">我要怎么开始呢？</p>
 <p data-page="44">成为照耀世界的光，别伤害它。努力去建设，别试图破坏。</p>
 <p data-page="44">带我的人回家。</p>
@@ -4212,7 +4096,7 @@
 <p data-page="44">我派到人间的</p>
 <p data-page="44">都是天使。</p>
 <div class="ebook-page" id="mobi-page-45" data-page="45"><span>第 45 页</span></div>
-<p data-page="45">Chapter 14</p>
+<h2 data-volume="2" data-page="45">Chapter 14</h2>
 <p data-page="45">我被你搞糊涂啦。我们能回过头吗？有些说法好像是自相矛盾的。我听到你说，有时候对别人最好的帮助是别去打扰他们。然后我又听到你说，如果看到有人需要帮助，千万要伸出援手。这两句话似乎有冲突。</p>
 <p data-page="45">让我来理清你对这个问题的思考。</p>
 <p data-page="45">永远不要提供那种削弱对方能力的帮助。永远不要固执地提供你认为对方需要的帮助。让对方知道你能提供的全部帮助，然后听听他们想要什么，看看他们准备好接受什么。</p>
@@ -4230,11 +4114,11 @@
 <p data-page="45">真的，真的，我对你们说——这些人都是我的兄弟，只要你们帮助过其中最穷苦的，就等于帮助过我。</p>
 <p data-page="45">这是我的真相，它将历经千秋万世而不变。</p>
 <div class="ebook-page" id="mobi-page-46" data-page="46"><span>第 46 页</span></div>
-<p data-page="46">Chapter 15</p>
+<h2 data-volume="2" data-page="46">Chapter 15</h2>
 <p data-page="46">我爱你，你知道吗？</p>
 <p data-page="46">我知道。我爱你。</p>
 <div class="ebook-page" id="mobi-page-47" data-page="47"><span>第 47 页</span></div>
-<p data-page="47">Chapter 16</p>
+<h2 data-volume="2" data-page="47">Chapter 16</h2>
 <p data-page="47">因为我们正在讨论的是宏观的全球问题，同时也回顾我们原先在第一卷对个人生活的探讨，所以我想问你关于环境的问题。</p>
 <p data-page="47">你想知道些什么呢？</p>
 <p data-page="47">有些环境保护者说它正在遭受破坏，这是真的吗？或者这些人只是毕业于伯克利加州大学而且抽大麻的极端激进分子和共产党员？</p>
@@ -4369,7 +4253,7 @@
 <p data-page="47">如果全世界追随你们，你们会为你们带领它前往的地方而高兴吗？</p>
 <p data-page="47">但愿你们每天都能想起这个问题。</p>
 <div class="ebook-page" id="mobi-page-48" data-page="48"><span>第 48 页</span></div>
-<p data-page="48">Chapter 17</p>
+<h2 data-volume="2" data-page="48">Chapter 17</h2>
 <p data-page="48">我听到你的挑战。我听到了。请更详细地跟我说说地球上的宏观生活。告诉我国家之间要怎样相处才能不再有战争。</p>
 <p data-page="48">国家之间永远会有纠纷，因为纠纷只是独立性的健康表征。然而，用暴力来解决纠纷则是极度不成熟的表征。</p>
 <p data-page="48">这世界没有理由不能避免使用暴力解决手段，只要各个国家都愿意避免使用它。</p>
@@ -4437,7 +4321,7 @@
 <p data-page="48">神啊，让我免遭</p>
 <p data-page="48">你那些信徒所害吧</p>
 <div class="ebook-page" id="mobi-page-49" data-page="49"><span>第 49 页</span></div>
-<p data-page="49">Chapter 18</p>
+<h2 data-volume="2" data-page="49">Chapter 18</h2>
 <p data-page="49">我来看看我是否跟得上你的思路。你刚才说的好像是倡导平等与平衡的世界观，认为所有的国家应该服从于某个世界政府，全体人民共同享有世界的财富。</p>
 <p data-page="49">当你说到平等的时候，请记住我们指的是平等的机会，而不是实际的平等。</p>
 <p data-page="49">实际的“平等”是永远无法实现的，而且你们应该为此感到庆幸。</p>
@@ -4619,7 +4503,7 @@
 <p data-page="49">满脸忧愁，</p>
 <p data-page="49">因为他有大量的财产。</p>
 <div class="ebook-page" id="mobi-page-50" data-page="50"><span>第 50 页</span></div>
-<p data-page="50">Chapter 19</p>
+<h2 data-volume="2" data-page="50">Chapter 19</h2>
 <p data-page="50">我很少看到你这么愤慨。神是不会愤慨的。这证明你不是神。</p>
 <p data-page="50">神是一切。神会一切。没有神不是的东西，神对其自身的一切经验，都是神在你之内、化为你、通过你而经验的。你感受的是你的愤慨。</p>
 <p data-page="50">你是对的。因为我同意你刚才说的每句话。</p>
@@ -4816,7 +4700,7 @@
 <p data-page="50">也许怀疑你并不是好事情。</p>
 <p data-page="50">绝对不是。</p>
 <div class="ebook-page" id="mobi-page-51" data-page="51"><span>第 51 页</span></div>
-<p data-page="51">Chapter 20</p>
+<h2 data-volume="2" data-page="51">Chapter 20</h2>
 <p data-page="51">人们为什么怀疑你呢？</p>
 <p data-page="51">因为他们怀疑自己。</p>
 <p data-page="51">他们为什么怀疑自己呢？</p>
@@ -4924,7 +4808,7 @@
 <p data-page="51">那是你们的本质。</p>
 <p data-page="51">所以去吧。</p>
 <div class="ebook-page" id="mobi-page-52" data-page="52"><span>第 52 页</span></div>
-<p data-page="52">致谢</p>
+<h2 data-volume="2" data-page="52">致谢</h2>
 <p data-page="52">我最先要感谢的，总是所有事物（包括此书）的本源。你们有些人选择称其为神，我也是，然而无论给本源起什么名字是无所谓的。它从前、如今、以后都是本源，哪怕直到比永远更远的将来。</p>
 <p data-page="52">其次，让我感激不已的是，我拥有非常好的父母。感谢他们给了我生命，以及我生命中许多重要的回忆。妈妈和爸爸是天造地设的绝配。虽然在外人看来未必如此，但他们两个人都是这么想的。他们管对方叫“害虫”和“农药”。妈妈说爸爸是“害虫”，爸爸说妈妈是他抵抗不了的“农药”。</p>
 <p data-page="52">我的母亲安妮是个非凡的人，她为人富有同情心，体贴入微，性格安静，宽宏大量，极其慷慨，很有耐心，聪慧过人。她对神的信仰也十分坚定。在她弥留之际，有个新任的罗马天主教年轻神父（他明显很紧张）为她做完最后的仪式，然后从她床边走过来，用充满钦佩的语气颤抖着低声对我说：“我的神啊，她反过来安慰我呢。”</p>
@@ -4956,6 +4840,7 @@
 <div class="ebook-page" id="mobi-page-53" data-page="53"><span>第 53 页</span></div>
 <p data-page="53">与神对话 2</p>
 <div class="ebook-page" id="mobi-page-54" data-page="54"><span>第 54 页</span></div>
+<h1 data-volume="3" data-page="54">与神对话 · 第三卷</h1>
 <div class="ebook-page" id="mobi-page-55" data-page="55"><span>第 55 页</span></div>
 <p data-page="55">目录</p>
 <p data-page="55">前言</p>
@@ -5026,7 +4911,7 @@
 <p data-page="58">我谦卑地将这本书献给你，</p>
 <p data-page="58">我最伟大的导师。</p>
 <div class="ebook-page" id="mobi-page-59" data-page="59"><span>第 59 页</span></div>
-<p data-page="59">前言</p>
+<h2 data-volume="3" data-page="59">前言</h2>
 <p data-page="59">在我们的文明史上，人类未曾像今天这般渴望得知生活中许多大问题的答案。</p>
 <p data-page="59">如今的生活显得乱七八糟。似乎一切都是颠三倒四的。而好玩的是，我们非常清楚事情本来不该是这样的，我们的生活本来不该是这样的，却似乎不知道如何“把事情理顺”。所以我们寻找。我们寻找答案，我们寻找对策，我们寻找彼此，我们寻找我们自己，我们也寻找神。</p>
 <p data-page="59">在这种情况之下，《与神对话》系列图书这份礼物变得如此重要。因为在这套作品当中，我们的问题得到了回答。这些答案不仅仅是答案，我也不会宣称它们是最好的答案，但它们确实提供了一种崭新的灵性理论，并为更深入地探索生活中的大问题提供了一个非凡的起点。此外，这套对话录自身的性质也决定了它们会提倡读者去做进一步的探索；这是灵性理论必须做，而许多宗教不愿意做的。</p>
@@ -5044,7 +4929,7 @@
 <p data-page="59">请从现在就踏上《与神对话·第三卷》的旅途吧！这本书是你促使自己正好在这个时刻读到的，请利用它来唤起所有这些回忆，以及更多的回忆。现在请和我穿越时空，回到我最初写下这本书的时刻，并体会到这本书中蕴含的智慧，是你在此刻送给自己的礼物，因为现在比从前更加需要这种智慧。</p>
 <p data-page="59">尼尔·唐纳德·沃尔什 阿什兰市，俄勒冈州 2003年7月</p>
 <div class="ebook-page" id="mobi-page-60" data-page="60"><span>第 60 页</span></div>
-<p data-page="60">Chapter 01</p>
+<h2 data-volume="3" data-page="60">Chapter 01</h2>
 <p data-page="60">今天是1994年复活节，星期天，我在这里，手里拿着笔。这是我先前得到的吩咐。我在这里等待神。他说过会出现，就像过去两个复活节那样，她会来和我开始持续一年的对话。这次对话是第三次，暂时来看也是最后一次。</p>
 <p data-page="60">这个过程——这次非同寻常的交流——始于1992年。它将会在1995年复活节完成。三年，三卷书。第一卷主要讨论个人的问题：如何看待恋爱关系，怎样找到合适的工作，怎样处理各种和钱、爱、性、神等有关的强大能量，以及如何将它们整合进我们的日常生活。第二卷拓展了这些话题，进一步阐述各种宏观的地缘政治论题：政府的本质，创造没有战争的世界，统一的国际社会的基础。第三卷是三部曲中的最后一部，我获悉它将会关注人类面临的最大问题。各种和异界域、异次元有关的观念，以及如何理解整个复杂的宇宙。</p>
 <p data-page="60">先后次序是这样的：</p>
@@ -5458,7 +5343,7 @@
 <p data-page="60">阅读这本书就是其中的一步。这次对话将会反复提起我们先前讲过的许多重要道理。这种重复将不会是偶然。它是为了强调。</p>
 <p data-page="60">现在，你问我如何建设你们的明天。让我们先来看看你们的昨天。</p>
 <div class="ebook-page" id="mobi-page-61" data-page="61"><span>第 61 页</span></div>
-<p data-page="61">Chapter 02</p>
+<h2 data-volume="3" data-page="61">Chapter 02</h2>
 <p data-page="61">过去和未来有什么关系呢？</p>
 <p data-page="61">若是认识过去，你就能更好地知道未来所有可能发生的情况。你来问我，如何让你的生活变得更加美好。了解你如何落到今天这种境地，对你来说是有用的。</p>
 <p data-page="61">我要跟你谈起权力和力量——以及这两者的区别。我会和你聊聊你们杜撰的撒旦这个形象，你们为何与如何杜撰它，还有你们如何确定你们的神是“他”，而不是“她”。</p>
@@ -5638,7 +5523,7 @@
 <p data-page="61">我的目标是进化，不是谴责；是成长，不是死亡；是经验，不是无从经验。我的目标是存在，而非不再存在。</p>
 <p data-page="61">我没有办法让我自己和你们——或者其他任何东西——分开。“地狱”无非是不明白这个道理。“获救”是完整的认识和理解这个道理。现在你们得救啦。你们再也无须担心“死后”会遇到什么事情。</p>
 <div class="ebook-page" id="mobi-page-62" data-page="62"><span>第 62 页</span></div>
-<p data-page="62">Chapter 03</p>
+<h2 data-volume="3" data-page="62">Chapter 03</h2>
 <p data-page="62">我们能稍微谈谈这个死亡的话题吗？你说过这第三卷将会涉及更高的真相，宇宙的真相。嗯，我们虽然聊过许多事情，但关于死亡，以及死后的事情，还没有谈到太多。我们现在来谈谈这个吧。我们来讲讲死亡吧。</p>
 <p data-page="62">好啊。你想知道什么呢？</p>
 <p data-page="62">人死后会发生什么事情呢？</p>
@@ -5756,7 +5641,7 @@
 <p data-page="62">这个世界等待着你。治愈它吧。现在就去治愈它，从你所处的地方开始。你能做的有很多很多。</p>
 <p data-page="62">因为我的羊群迷路了，它们必须被找到。你来当优秀的牧者吧，去引领它们回到我身边。</p>
 <div class="ebook-page" id="mobi-page-63" data-page="63"><span>第 63 页</span></div>
-<p data-page="63">Chapter 04</p>
+<h2 data-volume="3" data-page="63">Chapter 04</h2>
 <p data-page="63">谢谢你。谢谢你的召唤和你布置的任务。谢谢你将目标树立在我面前。谢谢你。因为你总是向我指出你知道我真正想要前往的方向。这是我来找你的原因。这是我深爱和祝福这次对话的原因。因为正是在和你对话的过程中，我才找到了我内在的神性，并开始看见其他人的内在神性。</p>
 <p data-page="63">我亲爱的孩子，天堂因你这么说而欢腾。正是由于这个原因，我才会来找你，也将会去找每个呼唤我的人。哪怕是现在，我也来到那些正在阅读这些文字的人身边。因为这次对话不仅是因你个人而发生的。它是要给全世界数以百万计的人看的。它会准确地在人们需要它的时候落到每个人手里，有时候是以最为神奇的方式。它会在人们生活中最为合适的时刻，让他们领略到曾经寻找的智慧。</p>
 <p data-page="63">这就是此处正在发生的奇迹：你们每个人自己造成了这种结果。“好像”是别人把这本书送给你，引领你进入这次交谈，为你打开这本对话录，然而，将你带到这里的，其实是你自己。</p>
@@ -5942,7 +5827,7 @@
 <p data-page="63">这是我正在做的事情。</p>
 <p data-page="63">这是我通过你们在做的事情。</p>
 <div class="ebook-page" id="mobi-page-64" data-page="64"><span>第 64 页</span></div>
-<p data-page="64">Chapter 05</p>
+<h2 data-volume="3" data-page="64">Chapter 05</h2>
 <p data-page="64">我想起来小时候学到的一段祈祷文。“主啊，我是低贱的，不配邀请你到我家里来。然而您只要说一句话，就能够治愈我的灵魂。”你刚才说了许多话，我觉得我痊愈啦。我不再觉得我很低贱。你有办法让我觉得我是高贵的。如果我能送给全人类一份礼物，我希望是你的办法。</p>
 <p data-page="64">你已经通过这部对话录，将那份礼物送给他们啦。</p>
 <p data-page="64">我希望等到这次对话结束之后，我还能继续把那份礼物送出去。</p>
@@ -6084,7 +5969,7 @@
 <p data-page="64">这种生活的循环并不令人郁闷，它只会令人欢乐。让人得到纯粹的欢乐，以及更多的欢乐。</p>
 <p data-page="64">真正的大师向来都是欢乐的。你现在渴望停留在大师的境界上。等成为大师之后，你就能够在狂喜之间出入，却永远是欢乐的。你不需要狂喜才能欢乐。你只要知道狂喜是什么就会欢乐。</p>
 <div class="ebook-page" id="mobi-page-65" data-page="65"><span>第 65 页</span></div>
-<p data-page="65">Chapter 06</p>
+<h2 data-volume="3" data-page="65">Chapter 06</h2>
 <p data-page="65">现在我想换个话题啦，如果可以的话，我想谈谈地球的变化。但是在此之前，我有句话想说。你在这里说的许多道理我好像以前听说过。我有时候觉得我反复地听到相同的东西。</p>
 <p data-page="65">那很好啊。因为确实是这样的！正如我早前说过的，这是事先注定的。</p>
 <p data-page="65">本书包含的信息就像弹簧。在收缩的时候，它本身变成许多圈圈。一个圈叠着一个圈，看上去确实是“不断在转圈”。只有当弹簧展开时，你才会发现它以螺旋的形式延伸，其舒展的幅度之大远远超乎你的想象。</p>
@@ -6295,7 +6180,7 @@
 <p data-page="65">如果有这样的通灵者或者灵媒同意帮助你，请你尽量反过来帮助他们。别因为他们极其慷慨大方就占他们便宜，不要少给报酬，或者根本不给，而是能给多少就给多少。</p>
 <p data-page="65">有些人是真正为这个世界服务的，他们真心地想要分享智慧和知识、洞察力和理解力、关怀和同情。去找到这些人，供奉这些人，慷慨地供奉他们。向他们致以最高的敬意。向他们奉上最多的供物。因为这些人是光明使者。</p>
 <div class="ebook-page" id="mobi-page-66" data-page="66"><span>第 66 页</span></div>
-<p data-page="66">Chapter 07</p>
+<h2 data-volume="3" data-page="66">Chapter 07</h2>
 <p data-page="66">我们已经讨论过许多问题啦。老兄，我们真的讨论了很多。现在可以换个话题吗？你做好这个准备了吗？</p>
 <p data-page="66">你呢？</p>
 <p data-page="66">好了呀，我现在迫不及待。我总算做好准备啦。我想把这三年来一直想问的问题都提出来。</p>
@@ -6445,7 +6330,7 @@
 <p data-page="66">或者你会回归遗忘的境地，坠回自私的深渊，重返并再次寄居于你在这次醒悟之前对你自己的身份的狭隘想象之中？</p>
 <p data-page="66">会是哪种呢？</p>
 <div class="ebook-page" id="mobi-page-67" data-page="67"><span>第 67 页</span></div>
-<p data-page="67">Chapter 08</p>
+<h2 data-volume="3" data-page="67">Chapter 08</h2>
 <p data-page="67">生命其实是会永远延续下去的，对吧？</p>
 <p data-page="67">它肯定是这样的啊。</p>
 <p data-page="67">它是不会终结的。</p>
@@ -6645,7 +6530,7 @@
 <p data-page="67">有些别的使者也很优秀。他们的书不仅描绘了如何提升身体里面的生命力量，还教你们如何离开你们的肉体。</p>
 <p data-page="67">通过阅读这些书，你们可以忆起放弃身体是多么的欢乐。到时你们将会明白，你们如何能够不再害怕死亡。你们将会理解这种二元论：何以灵魂在身体之中是欢乐的，摆脱身体也是欢乐的。</p>
 <div class="ebook-page" id="mobi-page-68" data-page="68"><span>第 68 页</span></div>
-<p data-page="68">Chapter 09</p>
+<h2 data-volume="3" data-page="68">Chapter 09</h2>
 <p data-page="68">生活有点像学校嘛。我记得以前每年秋季第一天上学时总是很兴奋，但等到学期结束，我又迫不及待地想放假。</p>
 <p data-page="68">正是如此！准确无误！你真是一语中的啊。确实是这样。只不过生活并非学校。</p>
 <p data-page="68">是的，我记得。你在第一卷解释过。在那之前，我以为生活就是“学校”，我们来到人世是为了“学习我们的课程”。你在第一卷帮了我很大忙，让我明白这种说法是错误的。</p>
@@ -6730,13 +6615,13 @@
 <p data-page="68">我们就是现今存在的万物，是曾经存在的一切，是将来存在的全部，是永无止境的世界。</p>
 <p data-page="68">阿门。</p>
 <div class="ebook-page" id="mobi-page-69" data-page="69"><span>第 69 页</span></div>
-<p data-page="69">Chapter 10</p>
+<h2 data-volume="3" data-page="69">Chapter 10</h2>
 <p data-page="69">我爱你，你知道吗？</p>
 <p data-page="69">知道。我也爱你。你知道吗？</p>
 <p data-page="69">我渐渐知道。我真的开始知道啦。</p>
 <p data-page="69">好啊。</p>
 <div class="ebook-page" id="mobi-page-70" data-page="70"><span>第 70 页</span></div>
-<p data-page="70">Chapter 11</p>
+<h2 data-volume="3" data-page="70">Chapter 11</h2>
 <p data-page="70">你愿意跟我谈谈灵魂的事情吗？</p>
 <p data-page="70">当然。我会尽力在你的理解力的有限范围内解释的。但如果你觉得有些话在你听来“没有意义”，千万不要感到沮丧。别忘了，你是通过一个过滤器接受这些信息的——而这个过滤器是你设计的，用来防止你忆起太多的事情。</p>
 <p data-page="70">请再次让我想起我为何要这么做。</p>
@@ -6899,7 +6784,7 @@
 <p data-page="70">没有什么“物质”本身是物质。也就是说，没有任何东西是靠其自身成为物质的。耶稣曾经说：“没有圣父，哪会有我。”万物的圣父是纯粹的思维。这是生命的能量。这是你们所谓的绝对之爱。这是男神和女神、最初和最终、起始和末尾。这是鸿蒙的状态、不动的动者、最初的源头。这是你们自有时间伊始便想要理解的。这是伟大的秘密、无尽的谜团、永恒的真相。</p>
 <p data-page="70">我们唯有一个，所以这一个就是现在的你。</p>
 <div class="ebook-page" id="mobi-page-71" data-page="71"><span>第 71 页</span></div>
-<p data-page="71">Chapter 12</p>
+<h2 data-volume="3" data-page="71">Chapter 12</h2>
 <p data-page="71">看着这些文字，我心里充满了敬畏。谢谢你以这种方式与我同在。谢谢你与我们大家同在。因为已经有数百万的人看过这几卷对话录，还有数百万的人将会看。我们非常感激你到我们心里来。</p>
 <p data-page="71">你们是我最爱的生灵，我一直在你们心里。你们现在能够真正地感受到我在那里，我十分高兴。</p>
 <p data-page="71">我向来与你们同在。我从不曾离开你们。我是你们，你们是我，我们不会分离，永远不会，因为那是不可能的。</p>
@@ -7245,7 +7130,7 @@
 <p data-page="71">假如你认为你决定以特别的方式向某个特别的人表达你的爱是一种神圣的承诺，是永远不能被打破的承诺，那么迟早有一天，这种承诺将会在你的经验中变成义务——到时你就会憎恨它。然而，假如你不把这种决定当作承诺，只能做出一次的承诺，而是自由的选择，可以反复做出的选择，那么憎恨的日子永远不会到来。</p>
 <p data-page="71">请记住这个道理：神圣的承诺唯有一个——那就是说出和实践你的真相。所有其他承诺都是自由的丧失，不可能是神圣的。因为自由是你的身份。假如你丧失了自由，你就丧失了你的自我。那可不是神圣的行为，那是对神的亵渎。</p>
 <div class="ebook-page" id="mobi-page-72" data-page="72"><span>第 72 页</span></div>
-<p data-page="72">Chapter 13</p>
+<h2 data-volume="3" data-page="72">Chapter 13</h2>
 <p data-page="72">哇！你这些话很刺耳哦。你是说我们不该做出承诺——不该向任何人承诺任何东西吗？</p>
 <p data-page="72">从你们大多数人现在的生活来看，每个承诺都包含着一个谎言。这个谎言就是，你们现在能够知道，在未来任何时刻，你们将会对某件事情产生什么感受，你们将会怎样处理那件事。假如你们以反应性生灵的身份去生活（绝大多数人是这样的），你们将无从知道这些。唯有当你们以创造性生灵的身份去生活时，你们才能许下不包含谎言的承诺。</p>
 <p data-page="72">创造性生灵确实能够知道，在未来任何时间，他们将会对某件事产生什么感受，因为创造性生灵会创造他们的各种感受，而不是去经验它们。</p>
@@ -7573,7 +7458,7 @@
 <p data-page="72">我愿意，我一直把你当成我的伴侣和共同创造者。从现在开始，直到永远，我们是一体。阿门。</p>
 <p data-page="72">阿门。</p>
 <div class="ebook-page" id="mobi-page-73" data-page="73"><span>第 73 页</span></div>
-<p data-page="73">Chapter 14</p>
+<h2 data-volume="3" data-page="73">Chapter 14</h2>
 <p data-page="73">看着这些文字，我心里充满了敬畏。谢谢你以这种方式与我同在。谢谢你与我们大家同在。因为已经有数百万的人看过这几卷对话录，还有数百万的人将会看。我们非常感激你到我们心里来。</p>
 <p data-page="73">你们是我最爱的生灵，我一直在你们心里。你们现在能够真正地感受到我在那里，我十分高兴。</p>
 <p data-page="73">我向来与你们同在。我从不曾离开你们。我是你们，你们是我，我们不会分离，永远不会，因为那是不可能的。</p>
@@ -7707,7 +7592,7 @@
 <p data-page="73">这就是你对堕胎问题的答案。这就是你对战争问题的答案。这就是你对吸烟问题、肉食问题和每个关于你有过行为问题的答案。</p>
 <p data-page="73">每个行动都是自我定义的行动。你所思、所说、所做的每件事，无不是在宣称：“这就是我的身份。”</p>
 <div class="ebook-page" id="mobi-page-74" data-page="74"><span>第 74 页</span></div>
-<p data-page="74">Chapter 15</p>
+<h2 data-volume="3" data-page="74">Chapter 15</h2>
 <p data-page="74">我想要告诉你们的是，我最亲爱的孩子们，这件关于你们身份和你们选择的身份的事情是非常重要的。不仅因为它决定了你们的经验，还因为它创造了我的本质。</p>
 <p data-page="74">你们向来听说是神创造了你们。现在我想要告诉你们，是你们正在创造神。</p>
 <p data-page="74">我知道，这与你们原来的理解大相径庭。然而你们只有实现这种理解的转变，才能完成你们来到人世真正要完成的工作。</p>
@@ -7731,7 +7616,7 @@
 <p data-page="74">原本我对我自己的认识是概念性的，后来我派你们——我光荣的组成部分——进入物质世界，以便我能够经验地认识我自己。生活就是神用来将概念变成经验的工具。你们也要用它来做同样的事情。因为你们就是神，做着这件事的神。</p>
 <p data-page="74">我选择了在每个时刻重新创造我自己。我选择了在经验中最完美地实现我对自己身份的最伟大憧憬。我创造了你们，以便你们能够创造我。这是我们的神圣工作。这是我们最大的欢乐。这正是我们存在的理由。</p>
 <div class="ebook-page" id="mobi-page-75" data-page="75"><span>第 75 页</span></div>
-<p data-page="75">Chapter 16</p>
+<h2 data-volume="3" data-page="75">Chapter 16</h2>
 <p data-page="75">看着这些文字，我心里充满了敬畏。谢谢你以这种方式与我同在。谢谢你与我们大家同在。</p>
 <p data-page="75">你客气啦。谢谢你与我同在。</p>
 <p data-page="75">我还有几个问题，有关那些“已进化的生灵”的，问完之后我会允许我自己完成这套对话录。</p>
@@ -7918,7 +7803,7 @@
 <p data-page="75">你们最远大的理想尚未显露，你们最美好的憧憬尚未揭晓。</p>
 <p data-page="75">但且等待！看啊！快看！你们的花季就要来啦。花茎已然强壮，花瓣即将盛开。我告诉你们吧：你们盛放时的美丽与芬芳必将弥漫大地，诸神的花园中必将有你们的地方。</p>
 <div class="ebook-page" id="mobi-page-76" data-page="76"><span>第 76 页</span></div>
-<p data-page="76">Chapter 17</p>
+<h2 data-volume="3" data-page="76">Chapter 17</h2>
 <p data-page="76">这才是我想听到的话！这才是我来这里要经验的东西！我想得到的是灵感，不是贬低。</p>
 <p data-page="76">你永远不会被贬低，除非你自认为你会。你永远不会遭到神的评判或者“指责”。</p>
 <p data-page="76">你居然会说“对和错这种东西是不存在的”，而且还宣称我们永远不会受到评判，许多人无法理解这样的神。</p>
@@ -8053,7 +7938,7 @@
 <p data-page="76">到时我们很可能仍然围着篝火，听着古代的寓言故事，而不是在家里舒舒服服地看电视！那样我们将会完全没有进步。</p>
 <p data-page="76">这样啊，幸亏你们做对了哦。</p>
 <div class="ebook-page" id="mobi-page-77" data-page="77"><span>第 77 页</span></div>
-<p data-page="77">Chapter 18</p>
+<h2 data-volume="3" data-page="77">Chapter 18</h2>
 <p data-page="77">再跟我谈谈高度进化的文明和高度进化的生灵吧。他们除了不会自相残杀之外，跟我们还有什么不同呢？</p>
 <p data-page="77">他们彼此分享。</p>
 <p data-page="77">我们也彼此分享啊！</p>
@@ -8269,7 +8154,7 @@
 <p data-page="77">当你们在神的面前（你们确实在神的面前，无论什么时候，你们都在彼此的面前），你们不会把属于神的东西——也就是世间万物——藏起来，不让神得到。你们将会自然地、平等地把属于神的东西，与神的所有分身共享。</p>
 <p data-page="77">这是支撑所有高度进化文明的整个社会、政治、经济和宗教结构的灵性原理。这是解释一切生活的宇宙观，由于你们没有认识这种宇宙观，也没有理解它，更没有依照它去生活，所以你们在地球上才会经验到种种乱象。</p>
 <div class="ebook-page" id="mobi-page-78" data-page="78"><span>第 78 页</span></div>
-<p data-page="78">Chapter 19</p>
+<h2 data-volume="3" data-page="78">Chapter 19</h2>
 <p data-page="78">其他星球上的生灵长什么样呢？</p>
 <p data-page="78">尽情发挥你的想象力吧。外星人的种类和你们地球上的物种一样多。</p>
 <p data-page="78">其实更多。</p>
@@ -8433,7 +8318,7 @@
 <p data-page="78">你准备走啦？</p>
 <p data-page="78">这本书挺长的了。</p>
 <div class="ebook-page" id="mobi-page-79" data-page="79"><span>第 79 页</span></div>
-<p data-page="79">Chapter 20</p>
+<h2 data-volume="3" data-page="79">Chapter 20</h2>
 <p data-page="79">等等！别急啊！你不能现在就走！我还有许多关于外星人的问题！他们会到地球来“拯救”我们吗？他们会带来各种技术，让我们平衡地球磁极、净化大气层、利用太阳能、控制天气、治疗所有的疾病、改善我们在地球上的生活吗？他们会阻止我们疯狂地自取灭亡吗？</p>
 <p data-page="79">你们可能不希望这样的事情发生。“高灵”知道这一点。他们知道这种干预智慧使你们从属于他们，将他们奉为神明，让他们取代你们现在所崇拜的神。</p>
 <p data-page="79">其实你们并不从属于任何人或者任何神明，这是那些来自高度发达的文明的生灵想要你们明白的道理。因此，如果他们想要和你们分享某些技术，他们将会采取特定的方式和特定的速度，让你们能够意识到这些技术是你们自己研发的，而不是别人送给你们的。</p>
@@ -8612,7 +8497,7 @@
 <p data-page="79">当你觉得有个问题这里尚未回答，请重读这套书。你将会发现你的问题已经得到回答。然而假如你真的觉得它尚未得到回答，那么去寻找你自己的答案吧。去开展你自己的对话。去创造你自己的真相。</p>
 <p data-page="79">这样你将会经验到你的真实身份。</p>
 <div class="ebook-page" id="mobi-page-80" data-page="80"><span>第 80 页</span></div>
-<p data-page="80">Chapter 21</p>
+<h2 data-volume="3" data-page="80">Chapter 21</h2>
 <p data-page="80">我舍不得你走！</p>
 <p data-page="80">我哪里都不去。我永远与你同在。以各种各样的方式。</p>
 <p data-page="80">拜托，结束这次对话之前，再回答我几个问题吧。最后几个啦。</p>
@@ -8918,7 +8803,7 @@
 <p data-page="80">我们又团聚了。这非常好。</p>
 <p data-page="80">［全文终］</p>
 <div class="ebook-page" id="mobi-page-81" data-page="81"><span>第 81 页</span></div>
-<p data-page="81">后记</p>
+<h2 data-volume="3" data-page="81">后记</h2>
 <p data-page="81">你刚刚读完的这套书，我相信是当今时代最重要的灵性著作。说它重要，是因为当我写下这些文字时（2005年4月），它已经给我们的星球造成了极大的影响，而且我敢肯定，在接下来几年、几十年里，它的影响还会逐渐增大。实际上，我认为哪怕在我离开人世之后多年，这套书依然会活着。它已经影响了超过七百万人的生活。这个数字将会变成七千万，七亿，乃至更多。</p>
 <p data-page="81">这是信口开河或者傲慢不逊吗？我希望你不这么看。对我来说，这只是陈述了我心目中的真实情况：这套书不是光给我一个人看的，也不是给少数人看的，而是给全世界看的。</p>
 <p data-page="81">能够在披露这份信息的过程中扮演一个小小的角色（真的是很小的角色），我已经感激不及。我只是提出问题，一些我们大家都会有的问题，然后把答案记录下来。我不敢肯定我的记录是干净的、纯洁的、毫无扭曲的，所以我并不奢望我能得到感谢或者认可；实际上我要请求大家原谅我以如此不完美的方式完成了一项如此重要的任务。</p>
@@ -8942,7 +8827,7 @@
 <p data-page="81">永远祝福你。愿神在你的生活中出现。</p>
 <p data-page="81">尼尔·唐纳德·沃尔什</p>
 <div class="ebook-page" id="mobi-page-82" data-page="82"><span>第 82 页</span></div>
-<p data-page="82">致谢</p>
+<h2 data-volume="3" data-page="82">致谢</h2>
 <p data-page="82">和以前相同，我首先要感谢的是我最好的朋友，神。我希望有朝一日，每个人都能和神成为朋友。</p>
 <p data-page="82">其次，我要感谢我那神奇的生活伴侣，南茜，我把这本书献给她。说到南茜，和她的功劳相比，我的感激之词显得那么苍白无力。我完全没有能力表达她其实是多么的美好。这是我铭记在心的。如果没有她，我不可能写出这部作品。</p>
 <p data-page="82">然后我要感谢的是汉普顿道路出版公司的出版人罗伯特·S·弗里德曼，感谢他有勇气在1995年第一次将这份材料披露在公众面前，并且出版了全套的《与神对话》三部曲。他接受了一份已经被其他四位出版商拒绝过的手稿，他的决定改变了数百万人的生活。</p>
@@ -8955,6 +8840,7 @@
 <div class="ebook-page" id="mobi-page-83" data-page="83"><span>第 83 页</span></div>
 <p data-page="83">与神对话 3</p>
 <div class="ebook-page" id="mobi-page-84" data-page="84"><span>第 84 页</span></div>
+<h1 data-volume="4" data-page="84">与神为友</h1>
 <div class="ebook-page" id="mobi-page-85" data-page="85"><span>第 85 页</span></div>
 <p data-page="85">目录</p>
 <div class="ebook-page" id="mobi-page-86" data-page="86"><span>第 86 页</span></div>
@@ -8997,7 +8883,7 @@
 <p data-page="88">和宽宏大量，以及其他许多</p>
 <p data-page="88">让我永志不忘的东西。</p>
 <div class="ebook-page" id="mobi-page-89" data-page="89"><span>第 89 页</span></div>
-<p data-page="89">前言</p>
+<h2 data-volume="4" data-page="89">前言</h2>
 <p data-page="89">试着告诉别人你刚和神进行了交谈，看看会发生什么事情。</p>
 <p data-page="89">不用试啦。我可以告诉你。</p>
 <p data-page="89">你的整个生活会改变。</p>
@@ -9025,7 +8911,7 @@
 <p data-page="89">神似乎不像各种领袖，他并不期待追随者。我们可以追随神，也可以引领别人走向神。前者将会改变我们，而后者将会改变世界。</p>
 <p data-page="89">尼尔·唐纳德·沃尔什 阿什兰市，俄勒冈州 1999年7月</p>
 <div class="ebook-page" id="mobi-page-90" data-page="90"><span>第 90 页</span></div>
-<p data-page="90">Chapter 01</p>
+<h2 data-volume="4" data-page="90">Chapter 01</h2>
 <p data-page="90">我清楚地记得我是什么时候开始害怕神的。那是在他说我母亲将会下地狱的时候。</p>
 <p data-page="90">好吧，其实这话不是他亲口说的，但有人替他这么说。</p>
 <p data-page="90">当时我大概六岁，我那自诩为神秘主义者的母亲正在我们家厨房的餐桌上用扑克牌为朋友“算命”。人们总是络绎不绝地来我们家，看看母亲能够用一副扑克牌预测到什么。大家说她精通此道，她有这种本领的消息悄悄地传开了。</p>
@@ -9081,7 +8967,7 @@
 <p data-page="90">基督诞生至今已有两千年，佛陀生活的时代距今已有两千五百年，我们最早听到孔子的教导、领略道家的智慧的时代更加久远，然而我们尚未解决一些重大的问题。我们是否有办法将已经得到的答案转化为某种在日常生活中行得通的东西，某种在日常生活中能发挥作用的东西？</p>
 <p data-page="90">我想是有的。我觉得肯定有，因为在我和神的对话中，我已经详细地讨论过这种办法。</p>
 <div class="ebook-page" id="mobi-page-91" data-page="91"><span>第 91 页</span></div>
-<p data-page="91">Chapter 02</p>
+<h2 data-volume="4" data-page="91">Chapter 02</h2>
 <p data-page="91">我被问到次数最多的问题是：“你怎么知道你真的曾与神对话？你怎么知道那不是你幻想出来的？甚至是魔鬼对你耍的花样？”</p>
 <p data-page="91">被问到次数第二多的问题是：“为什么是你？神为什么选中你？”</p>
 <p data-page="91">第三多的是：“这件事情发生之后，你的生活怎么样？有什么变化？”</p>
@@ -9266,7 +9152,7 @@
 <p data-page="91">那太好啦。看来现在我不能说我受到神的启发啦。但我正在写这本书呢？这可是你跑来找我，让我写的！</p>
 <p data-page="91">不错，这是个很好的起点，我们可以从这里开始，来讨论如何与神成为朋友。</p>
 <div class="ebook-page" id="mobi-page-92" data-page="92"><span>第 92 页</span></div>
-<p data-page="92">Chapter 03</p>
+<h2 data-volume="4" data-page="92">Chapter 03</h2>
 <p data-page="92">如果你和我要成为真正的朋友，拥有一份有实际效用的友谊，而不仅仅是理论上的友谊……</p>
 <p data-page="92">这很重要。我们先来谈谈两者的区别，因为这种区别很重要。许多人认为神是他们的朋友，但他们不知道如何利用这份友谊。他们认为它是一种疏远而非亲近的关系。</p>
 <p data-page="92">更多的人甚至不认为我是他们的朋友。这才叫人伤心呢。许多人不把我当朋友，却把我当父亲—— 严厉、残忍、苛刻、易怒的父亲。这个父亲绝对不能容忍某些方面—— 比如说崇拜我的方式—— 的错误。</p>
@@ -9453,7 +9339,7 @@
 <p data-page="92">这点我也很难理解。我甚至无法想象我会那么做。</p>
 <p data-page="92">问题就出在这里，我的朋友。问题就出在这里。</p>
 <div class="ebook-page" id="mobi-page-93" data-page="93"><span>第 93 页</span></div>
-<p data-page="93">Chapter 04</p>
+<h2 data-volume="4" data-page="93">Chapter 04</h2>
 <p data-page="93">在我看来，人们需要很大的胆量，才敢命令你做事。</p>
 <p data-page="93">我更喜欢“勇气”这个词。是的，我已经告诉过你，要与神拥有一份真正的、有用的友谊，你们需要思想的改变、心灵的改变，还有勇气。</p>
 <p data-page="93">我如何才能彻底重组我对神我关系的理解，乃至认识到我要求神做事是没问题的呢？</p>
@@ -9514,7 +9400,7 @@
 <p data-page="93">好吧，我准备改掉。我准备和你拥有一段完全能发挥作用的友谊。</p>
 <p data-page="93">太好啦。接下来我会教你怎么做。接下来我会教全人类如何成为神的朋友……</p>
 <div class="ebook-page" id="mobi-page-94" data-page="94"><span>第 94 页</span></div>
-<p data-page="94">Chapter 05</p>
+<h2 data-volume="4" data-page="94">Chapter 05</h2>
 <p data-page="94">首先，你必须认识我。</p>
 <p data-page="94">我想我是认识你的。</p>
 <p data-page="94">勉强算吧。你对我的认识还不够深入。我们有过很好的对话，但还是不够。</p>
@@ -9796,7 +9682,7 @@
 <p data-page="94">我希望它就像你说的那么简单。</p>
 <p data-page="94">就是这么简单。相信我。</p>
 <div class="ebook-page" id="mobi-page-95" data-page="95"><span>第 95 页</span></div>
-<p data-page="95">Chapter 06</p>
+<h2 data-volume="4" data-page="95">Chapter 06</h2>
 <p data-page="95">这是第二步，对吧？</p>
 <p data-page="95">是的，这一步很艰巨。</p>
 <p data-page="95">是很艰巨，因为我不知道我能不能相信你。</p>
@@ -10052,7 +9938,7 @@
 <p data-page="95">我相信的。我相信你。因为我已经明白我不是非得相信你不可。生活的过程是自在的。我无需信任，只需认识。</p>
 <p data-page="95">正是如此。</p>
 <div class="ebook-page" id="mobi-page-96" data-page="96"><span>第 96 页</span></div>
-<p data-page="96">Chapter 07</p>
+<h2 data-volume="4" data-page="96">Chapter 07</h2>
 <p data-page="96">我以前不是这样的。我是说，以前我不必先听一大通解释才肯相信别人。其实在年轻的时候，我总是相信一切都是没问题的。</p>
 <p data-page="96">我是个非常乐观的人。乐观得简直有点盲目。考虑到我从小就很害怕神，这种精神状态就显得更加盲目了。但我当时就是那样的。小时候，我总是“知道”我能够得偿所愿—— 而且也总是如此。我想补充的是，我通常不用费很大力气。这真的让我哥哥感到郁闷，他常常大声地抱怨“尼尔运气真好”。有一次我无意间听到我爸爸回答他的抱怨。他说：“尼尔的运气是他自己争取到的。”</p>
 <p data-page="96">他说得没错。部分原因正在于我的父母。母亲灌输给我对生活的热爱和创新的能力，父亲则教会我自信。无论我遇到什么棘手的事情，他总是会问：“你不尝试的话，怎么能处理好呢？”</p>
@@ -10327,7 +10213,7 @@
 <p data-page="96">热爱神。</p>
 <p data-page="96">[1] 超级碗（Super Bowl）是全美橄榄球联盟年度冠军赛的代称，通常在1月最后一个或者2月第一个星期天举办。橄榄球是美国最受欢迎的体育运动，而超级碗直播多年来一直是全美收视率最高的电视节目。</p>
 <div class="ebook-page" id="mobi-page-97" data-page="97"><span>第 97 页</span></div>
-<p data-page="97">Chapter 08</p>
+<h2 data-volume="4" data-page="97">Chapter 08</h2>
 <p data-page="97">让我们温故知新吧。与神成为朋友的前三个步骤是：认识神，信任神，热爱神。</p>
 <p data-page="97">是的。</p>
 <p data-page="97">每个人都热爱神啊！这个步骤应该很简单！</p>
@@ -10549,7 +10435,7 @@
 <p data-page="97">你不必通过断绝关系来改变它。实际上，你无法断绝关系，你只能改变它。你永远和每个人存在着关系。问题不在于你是否有关系，而在于你拥有的是哪种关系。</p>
 <p data-page="97">你对这个问题的回答将会对你的生活产生永久的影响—— 而且实际上真的能够改变这个世界。</p>
 <div class="ebook-page" id="mobi-page-98" data-page="98"><span>第 98 页</span></div>
-<p data-page="98">Chapter 09</p>
+<h2 data-volume="4" data-page="98">Chapter 09</h2>
 <p data-page="98">通过和你的对话，我了解到我的各种关系都是神圣的。它们是生活中最重要的因素，因为正是借助各种关系，我才能表达和经验我的身份，以及我的理想身份。</p>
 <p data-page="98">而且不仅是你和别人的关系如此，你和所有地方的所有事物的关系也是如此。你和生活的关系，你和生活中所有要素的关系，你和钱、爱、性、神（这是人类经验的四大基石）的关系，你和树木、花草、走兽、飞禽、风儿、空气、天穹、大海的关系，你和自然的关系，你和我的关系，莫不如此。</p>
 <p data-page="98">我和每样事物的关系决定了我的身份和本质。你曾经对我说，关系是神圣的基础。因为若是缺乏与其他事物的关系，我便无从创造、认识和经验我自己的任何属性。或者用你的话来说，若是没有非我，我也就无从存在。</p>
@@ -10766,7 +10652,7 @@
 <p data-page="98">是怎么得到的呢？</p>
 <p data-page="98">杰伊亲自给了我答案。用两个字。在墓地里。用他自己的声音。</p>
 <div class="ebook-page" id="mobi-page-99" data-page="99"><span>第 99 页</span></div>
-<p data-page="99">Chapter 10</p>
+<h2 data-volume="4" data-page="99">Chapter 10</h2>
 <p data-page="99">墓地也许不太像是能够得到启发的地方，但我就是在那里得到的。虽然只是吉光片羽。</p>
 <p data-page="99">我去安纳波利斯的圣安妮教堂参加杰伊的葬礼，但我去晚了，发现所有位子坐满了人。城里肯定有半数人都出席了，我不知道为什么，但就是觉得和这么多吊唁者在一起不自在。或许是我想要和他私下相处吧。我刚失去了一位非常好的朋友。当时我们已经是好朋友。他就像我的兄长。</p>
 <p data-page="99">我离开教堂，想好当天晚些时候，再到坟前为他办一场个人的祭奠，我要独自跟他道别。两个小时后，我估计大家都去过墓地并已离开，于是走进了圣安妮公墓。我猜得没错。那里空无一人。我开始寻找杰伊的坟墓，以便跟他道别。可是我找不着他的坟。到处都找不着。我看过一排又一排的墓碑，但看不见“埃尔默·（杰伊）杰克逊二世”。我重新检查了一遍。还是没有找到。</p>
@@ -10914,7 +10800,7 @@
 <p data-page="99">我一直在这里准备帮助你们。</p>
 <p data-page="99">以各种各样的方式。</p>
 <div class="ebook-page" id="mobi-page-100" data-page="100"><span>第 100 页</span></div>
-<p data-page="100">Chapter 11</p>
+<h2 data-volume="4" data-page="100">Chapter 11</h2>
 <p data-page="100">谢谢你通过这次对话教大家如何与神为友。我又得以和你度过一段美好的时光。光是前面五个步骤—— 认识神、信任神、热爱神、拥抱神、利用神—— 就足以改变人们的生活啦。</p>
 <p data-page="100">是的，但请你耐心点。还有两个步骤。</p>
 <p data-page="100">我知道。下面那个步骤我有点想不通。</p>
@@ -11012,7 +10898,7 @@
 <p data-page="100">没有哪件事情的发生不会给你带来契机，让你能够得到真实而恒久的好处。完全没有。</p>
 <p data-page="100">有些时刻的完美之处也许你没有看到，但这并不意味着那些时刻是不完美的。它们依然是礼物。</p>
 <div class="ebook-page" id="mobi-page-101" data-page="101"><span>第 101 页</span></div>
-<p data-page="101">Chapter 12</p>
+<h2 data-volume="4" data-page="101">Chapter 12</h2>
 <p data-page="101">现在我站得足够远，能看清我的往事，能看见我那错综复杂的人生经历的美妙之处，我心里充满了感激。</p>
 <p data-page="101">这是与神为友的第七个步骤，也是最后一个步骤：</p>
 <p data-page="101">感谢神。</p>
@@ -11179,7 +11065,7 @@
 <p data-page="101">你承诺过向我们说说你的人生，尤其是你在《与神对话》三部曲出版后的经历，可是你只向我们透露了一点点。所以也许我们两个都应该履行诺言！</p>
 <p data-page="101">很好。</p>
 <div class="ebook-page" id="mobi-page-102" data-page="102"><span>第 102 页</span></div>
-<p data-page="102">Chapter 13</p>
+<h2 data-volume="4" data-page="102">Chapter 13</h2>
 <p data-page="102">离开郡政府后，我加盟当地某家连锁学校，整整干了十年，接着到美国西海岸和伊丽莎白·库伯勒—罗斯博士共事，十八个月后在圣迭戈开办了我自己的广告公司，在那里加入泰丽·科尔—惠特克传教会，几年后去了华盛顿州，移居波特兰，然后又去了俄勒冈州南部，在那里变得风餐露宿、身无分文，最后重操旧业，在广播电台找到工作，过了三年被解聘，度过一段悲惨的日子，跟着变成某个在全国范围内播出的脱口秀节目主持人，写出了《与神对话》系列图书，自那之后过着非常美好的日子，直到现在。</p>
 <p data-page="102">好啦，我履行我的承诺啦，现在轮到你了。</p>
 <p data-page="102">我觉得人们会想要你说得更清楚一点。</p>
@@ -11311,7 +11197,7 @@
 <p data-page="102">神是处于最高振动频率的生活，那就是欢乐本身。</p>
 <p data-page="102">神是完全的欢乐，当你表达神的这种第一心态，你自己也能够达到神的境界。</p>
 <div class="ebook-page" id="mobi-page-103" data-page="103"><span>第 103 页</span></div>
-<p data-page="103">Chapter 14</p>
+<h2 data-volume="4" data-page="103">Chapter 14</h2>
 <p data-page="103">我从来没有见过比泰丽·科尔—惠特克更欢乐的人。她的笑容极其迷人，她那动听、爽朗和豪放的笑声极具感染力，她对世道人心有着深刻的了解，能够对别人的生活施加无与伦比的影响。在20世纪80年代初期，这位卓越的女子让南加州为之倾倒，她那标志性的乐观灵性主义让数十万人重新与神建立起快乐的关系。</p>
 <p data-page="103">最早听说泰丽的大名时，我住在埃斯康迪多，在平安家园基金会为伊丽莎白·库伯勒—罗斯博士工作。泰丽是跟我有过紧密工作关系的同事中最慈祥、最有灵性智慧的人，她带领我重返一个我阔别多年的地方：那个渴望与神拥有私人关系、渴望在我直接的生活经验里认识到神的地方。</p>
 <p data-page="103">自从二十几岁起，我再也没去过教堂，但那时我却再度打定主意，想要变成神职人员。十九岁离开密尔沃基之后，我继续了多年的神学研究。由于怀念少年时在教会学校度过的光阴，我常常有重新加入某个教会的愿望。</p>
@@ -11489,7 +11375,7 @@
 <p data-page="103">有些人记得，而且记得他们已经记得。</p>
 <p data-page="103">有些人已经完全忆起，他们已经再次变成神的身体的一部分。</p>
 <div class="ebook-page" id="mobi-page-104" data-page="104"><span>第 104 页</span></div>
-<p data-page="104">Chapter 15</p>
+<h2 data-volume="4" data-page="104">Chapter 15</h2>
 <p data-page="104">我想要完全忆起。我想要与神团聚。这是每个人的灵魂都渴望的吧？</p>
 <p data-page="104">是的。有些人不知道，有些人不“记得他们记得”，但他们心里依然有这样的渴望。有些人甚至不相信有神的存在，可是他们内心深处的渴望不会消失。他们以为那是对其他东西的渴求，但到最后，他们将会发现，他们渴求的是重返家园，是再次变成神的身体的一部分。</p>
 <p data-page="104">那些不信神者将会发现这个事实，因为他们终将发现，无论他们达到多高的境界，取得多大的成就，也满足不了他们内心最深处的渴望。哪怕是别人的爱。</p>
@@ -11653,7 +11539,7 @@
 <p data-page="104">万一你是在欺骗自己呢？你不会欺骗自己吗？</p>
 <p data-page="104">当答案瞬间出现时，别对它进行评判。对它进行评判就是在欺骗自己—— 这会让你自己变成傻瓜。请走进爱的中央，请从那个地方出发去做出你所有的选择和决定，你将会找到平安。</p>
 <div class="ebook-page" id="mobi-page-105" data-page="105"><span>第 105 页</span></div>
-<p data-page="105">Chapter 16</p>
+<h2 data-volume="4" data-page="105">Chapter 16</h2>
 <p data-page="105">完全的接受、完全的祝福和完全的感恩是什么意思呢？这是神的五种心态的最后三种，我不是很能理解，尤其是第三种和第四种。</p>
 <p data-page="105">完全的接受意味着别与当前出现的事物或境况争吵。这意味着别拒绝它、丢弃它、离开它，而是去拥抱它、紧握它、热爱它，就像它是你自己的。因为它确实是你自己的。它是你自己的造物，你对它很满意—— 也可能不满意。</p>
 <p data-page="105">如果你不满意，你将会厌恶你的造物，而厌即是恋。因此要欢乐，要高兴，假如当前的境况是你现在想要改变的，只要选择以别的方式去经验它就好。也许外在的表象、外在的现象根本没有变化，但只要你有决心，你对它的内在经验可以也将会永远改变。</p>
@@ -11888,7 +11774,7 @@
 <p data-page="105">哪怕你在弥留之际，哪怕你即将离开人世，只要你决意改过自新，在神看来，你的整个人生就是可取的，光荣的。</p>
 <p data-page="105">你必须明白这个道理。你必须相信它。如果事实不是如此，我不会这么对你说。</p>
 <div class="ebook-page" id="mobi-page-106" data-page="106"><span>第 106 页</span></div>
-<p data-page="106">Chapter 17</p>
+<h2 data-volume="4" data-page="106">Chapter 17</h2>
 <p data-page="106">这是我读过最有希望的句子。这意味着只要我们愿意，我们所有人—— 哪怕是“坏人”—— 在你心里都有个家。这又肯定意味着我们和神是朋友。</p>
 <p data-page="106">刚开始写这本书时，我说我希望能够解决两个问题：如何通过对话与神建立起一份真正的、有实际作用的友谊，如何在日常生活中借助这份友谊去应用《与神对话》的道理。</p>
 <p data-page="106">现在你明白我以前跟你说过的那句话啦—— 你们和神的关系，并不异于你们彼此之间的关系。</p>
@@ -12033,7 +11919,7 @@
 <p data-page="106">所以，你去吧，去教导所有的国家。去传授这个道理：你为别人而做的，便是为你的自我而做的；你无法为别人做到的，也无法为你的自我做到。你愿意别人怎样对待自己，就怎么对待别人，因为那就是在对待你自己。</p>
 <p data-page="106">这就是黄金法则。现在你彻底地理解它了。</p>
 <div class="ebook-page" id="mobi-page-107" data-page="107"><span>第 107 页</span></div>
-<p data-page="107">Chapter 18</p>
+<h2 data-volume="4" data-page="107">Chapter 18</h2>
 <p data-page="107">为什么从小没人教我们这些美好的真相呢？就像黄金法则，以前我虽然觉得它说得很好，但现在才有了更深入的理解。它是极其对称的。整个论证完全符合逻辑。现在我们明白它的理由了。我们明白了为什么应用这个道理会符合我们自己的最佳利益。那不再是利他主义的行动，而是讲求实用的行动。那么做是对我们有益的。人们为什么不把黄金法则教给小孩子呢？</p>
 <p data-page="107">问题不在于，为什么以前没人传授这个道理？问题在于，你打算将来怎么做？所以，你去吧，去教导所有的国家，广泛地散布这道新的福音：</p>
 <p data-page="107">我们所有人是一体。</p>
@@ -12159,7 +12045,7 @@
 <p data-page="107">第一点我们已经在这里详细地讨论过了，等到理解了第二点和第三点，也许你们就能够更轻松自如地应用这个指示。</p>
 <p data-page="107">我想要明白这种智慧的功用，以及如何在日常生活中将其付诸实践，所以让我们来谈谈其他两点吧。</p>
 <div class="ebook-page" id="mobi-page-108" data-page="108"><span>第 108 页</span></div>
-<p data-page="108">Chapter 19</p>
+<h2 data-volume="4" data-page="108">Chapter 19</h2>
 <p data-page="108">在《与神对话》三部曲的结尾，你也提到这三点。</p>
 <p data-page="108">是的，如果你明白第二点，一切皆已足够，那么你只要选择，就会懂得如何应用第一点，我们所有人是一体。</p>
 <p data-page="108">一切皆已足够是什么意思呢？</p>
@@ -12283,7 +12169,7 @@
 <p data-page="108">生命是永恒的，宇宙间唯有一个我们。</p>
 <p data-page="108">你们只需要知道这两个真相就够了。</p>
 <div class="ebook-page" id="mobi-page-109" data-page="109"><span>第 109 页</span></div>
-<p data-page="109">Chapter 20</p>
+<h2 data-volume="4" data-page="109">Chapter 20</h2>
 <p data-page="109">与神为友是什么意思呢？它意味着无论何时何地，你随时能够拥有这样的智慧。</p>
 <p data-page="109">它意味着永远不再为该做什么事情、该当什么人、该去往何方、何时行动、为何爱而思前想后。当你与神为友，所有问题都将会消失，因为我会带给你所有的答案。</p>
 <p data-page="109">实际上，我根本没有带来任何答案，而只是让你明白，你在进入人世时就带着它们，你向来拥有它们。我会让你看到如何召唤它们前来，如何让它们在你遇到各种疑惑、难题和困难时翩然而至，从而让那些疑惑、难题和困难不再是你的生活的一部分，被简单的经验取而代之。</p>
@@ -12309,7 +12195,7 @@
 <p data-page="109">然后，你要为别人做这件事。让人们找到他们自己。这是你的任务，这是你的使命，这是你的目标。</p>
 <p data-page="109">通过他们和你的友谊，人们终将认识到他们与神之间也是朋友。</p>
 <div class="ebook-page" id="mobi-page-110" data-page="110"><span>第 110 页</span></div>
-<p data-page="110">Chapter 21</p>
+<h2 data-volume="4" data-page="110">Chapter 21</h2>
 <p data-page="110">我的故事暂时到此为止。现在是1999年6月29日早上6点25分。我自凌晨2点30分醒来，在舒适的书房中为这本书结尾，窗外是俄勒冈州阿什兰市郊外起伏的群山。我一直想知道这本书的结尾会是什么样。对我来说，上一章就是结尾。再也没有什么要说的了。要说的全都在这里。一切都已明了。当你觉悟，当你觉悟到你已经觉悟，就再也没有什么要问的了。</p>
 <p data-page="110">我在《与神对话·第一卷》开始讲述我的人生，讲到这里就结束啦。离开阿什兰附近的宿营地之后，我回到了“正常的生活”。但这次我想要的是过生活，而不仅是过日子。我在写下那封愤怒的信给神和撰写《与神对话·第一卷》之前许多年的悲伤，大部分是因为我只是想要过日子。这也是造成我有过几段不幸婚姻的主要原因。自那之后，我学会了在生活中提出两个重要的问题：我要去何方？谁与我同行？我还学会了永远不要颠倒这两个问题的次序，永远不要先问第二个，然后再让第一个来适应第二个。</p>
 <p data-page="110">现在我拥有很棒的生活，有福气得到了我很棒的妻子南希，也很荣幸结识了许多很棒的朋友。而我最棒的朋友就是神。</p>
@@ -12341,7 +12227,7 @@
 <p data-page="110">我爱你，你知道吗？</p>
 <p data-page="110">我知道。我也爱你。</p>
 <div class="ebook-page" id="mobi-page-111" data-page="111"><span>第 111 页</span></div>
-<p data-page="111">后记</p>
+<h2 data-volume="4" data-page="111">后记</h2>
 <p data-page="111">每当完成又一部对话录，我总是会为神馈赠给人类的智慧财富而震惊。神一直在对我们说话，不仅是在这里，也在其他许多书里，以及通过其他许多种方式。我很清楚地知道，只要我们用心聆听，这个星球上的所有问题都能得到解决。</p>
 <p data-page="111">我想要将神赠送给我们大家的智慧付诸实践。所以我擅自在我每本著作的后记推荐各种办法，以让我们所有人能够更加投入地、更加深入地去把我们的灵性化为行动。</p>
 <p data-page="111">要把你自己的灵性付诸行动，第一步是去接触它。对许多人来讲，这不但是第一步，也是最大的一步。因为许多人会问：“我怎样才能做到呢？”我在这本书里提出过这个问题。也许你能回想起神的回答：</p>
@@ -12383,7 +12269,7 @@
 <p data-page="111">我知道我们的与神对话将会让我们与神为友，而这份美好的友谊最终将会让我们经验到与神合一，让我们终于能够以一个声音说话。</p>
 <p data-page="111">那个声音将会传遍各地—— 无论是在人间，还是在天堂。</p>
 <div class="ebook-page" id="mobi-page-112" data-page="112"><span>第 112 页</span></div>
-<p data-page="112">致谢</p>
+<h2 data-volume="4" data-page="112">致谢</h2>
 <p data-page="112">首先我最想感谢的，依然是我最好的朋友，神。我由衷地感激神在我的生活中出现，由衷地感激神终于和我成为朋友，由衷地感激神赠送给我所有这些道理—— 也给了我把这些道理送出去的机会。</p>
 <p data-page="112">同样让我心怀感恩的是，我的人生伴侣和我之间的友谊—— 虽然这份友谊不那么神圣。我的妻子南希是“福气”这个词的化身。自从遇到她以来，我时时刻刻感到自己很有福气。</p>
 <p data-page="112">南希是个令人震惊的人。她浑身上下散发着安静的智慧、无尽的耐心、深切的慈悲，以及我所知道的最纯粹的爱。在这有时候暗无天日的世界，她真是一个光明使者。认识她让我重新看到了人性的善良与美好，重新燃起了相敬如宾、相互扶持的希望，重新拾起了对真正的爱情的憧憬。</p>
@@ -12411,6 +12297,7 @@
 <div class="ebook-page" id="mobi-page-113" data-page="113"><span>第 113 页</span></div>
 <p data-page="113">与神为友</p>
 <div class="ebook-page" id="mobi-page-114" data-page="114"><span>第 114 页</span></div>
+<h1 data-volume="5" data-page="114">与神合一</h1>
 <div class="ebook-page" id="mobi-page-115" data-page="115"><span>第 115 页</span></div>
 <p data-page="115">目录 Contents</p>
 <div class="ebook-page" id="mobi-page-116" data-page="116"><span>第 116 页</span></div>
@@ -12438,7 +12325,7 @@
 <p data-page="117">赣版权登字—01—2018—303</p>
 <p data-page="117">版权所有 侵权必究</p>
 <div class="ebook-page" id="mobi-page-118" data-page="118"><span>第 118 页</span></div>
-<p data-page="118">前言</p>
+<h2 data-volume="5" data-page="118">前言</h2>
 <p data-page="118">欢迎来读这本书。</p>
 <p data-page="118">我想请你做出一个非凡的假设。</p>
 <p data-page="118">我想请你假设这本书是专为你而写的。</p>
@@ -12508,7 +12395,7 @@
 <p data-page="118">愿神眷顾你。</p>
 <p data-page="118">尼尔·唐纳德·沃尔什 俄勒冈州阿什兰市 2000年7月</p>
 <div class="ebook-page" id="mobi-page-119" data-page="119"><span>第 119 页</span></div>
-<p data-page="119">序章</p>
+<h2 data-volume="5" data-page="119">序章</h2>
 <p data-page="119">神在过去许多年，已经许多次，以许多种方式和你们说话，但很少如这次般直接。</p>
 <p data-page="119">这次我直接和你们说话，而这在整个人类历史上只发生过少数几次。</p>
 <p data-page="119">很少有人敢于以这种方式聆听我，敢于直接聆听我。将他们所听到的话与他者分享的人就更少了。既聆听又分享的极少数人曾经改变了世界。</p>
@@ -12660,9 +12547,9 @@
 <p data-page="119">[3] 师利·奥罗宾多(Sri Aurobindo)是现代印度哲学家。梅赫巴巴（Meher Baba）是当代印度灵修大师。巴哈欧拉（Baha&#x27;u&#x27;llah）是19世纪伊朗宗教人士。厄尼斯特·霍尔默斯（Ernest Holmes）是当代美国作家。赛巴巴（Sai Baba）是19世纪印度宗教领袖。</p>
 <p data-page="119">[4] 约瑟夫·史密斯是19世纪美国摩门教领袖。</p>
 <div class="ebook-page" id="mobi-page-120" data-page="120"><span>第 120 页</span></div>
-<p data-page="120">第一部分 人类的十大幻觉</p>
+<h2 data-volume="5" data-page="120">第一部分 人类的十大幻觉</h2>
 <div class="ebook-page" id="mobi-page-121" data-page="121"><span>第 121 页</span></div>
-<p data-page="121">1.需求的幻觉</p>
+<h2 data-volume="5" data-page="121">1.需求的幻觉</h2>
 <p data-page="121">第一幻觉是：</p>
 <p data-page="121">需求存在</p>
 <p data-page="121">这不仅是第一个幻觉，也是最大的幻觉。其他幻觉都以这个幻觉为基础。</p>
@@ -12719,7 +12606,7 @@
 <p data-page="121">因而，正是为了弥补第一幻觉的纰漏，他们又创造了第二幻觉。</p>
 <p data-page="121">[1] 雅威（Yahweh）是犹太教最高神灵的名字。</p>
 <div class="ebook-page" id="mobi-page-122" data-page="122"><span>第 122 页</span></div>
-<p data-page="122">2.失败的幻觉</p>
+<h2 data-volume="5" data-page="122">2.失败的幻觉</h2>
 <p data-page="122">第二幻觉是：</p>
 <p data-page="122">失败存在。</p>
 <p data-page="122">那种认为神的意愿（姑且假定神有意愿）无法得以实现的观念，有悖于你们关于神的一切认知，比如说神是全知全能的，神是至尊，是造物主；但你们仍然热切地拥抱了那种观念。</p>
@@ -12738,7 +12625,7 @@
 <p data-page="122">他们又是正确的。但可惜他们又犯了一个错误。第二幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="122">因而，正是为了弥补第二幻觉的纰漏，他们又创造了第三幻觉。</p>
 <div class="ebook-page" id="mobi-page-123" data-page="123"><span>第 123 页</span></div>
-<p data-page="123">3.分离的幻觉</p>
+<h2 data-volume="5" data-page="123">3.分离的幻觉</h2>
 <p data-page="123">第三幻觉是：</p>
 <p data-page="123">分离存在。</p>
 <p data-page="123">要解决第二幻觉引起的混乱，唯一的办法是创造第三幻觉：造物主和他的造物并非一体。</p>
@@ -12797,7 +12684,7 @@
 <p data-page="123">他们又是正确的。但可惜他们又犯了一个错误。第三幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="123">正是为了弥补第三幻觉的纰漏，他们又创造了第四幻觉。</p>
 <div class="ebook-page" id="mobi-page-124" data-page="124"><span>第 124 页</span></div>
-<p data-page="124">4.匮乏的幻觉</p>
+<h2 data-volume="5" data-page="124">4.匮乏的幻觉</h2>
 <p data-page="124">第四幻觉是：</p>
 <p data-page="124">匮乏存在</p>
 <p data-page="124">它来自第三幻觉，因为如果没有分离的观念，匮乏的观念是站不住脚的。假如宇宙间万物皆为一体，而一体即是万物，那么匮乏当然是不存在的，因为一体便是一切，因而：</p>
@@ -12852,7 +12739,7 @@
 <p data-page="124">他们又是正确的。但可惜他们又犯了一个错误。第四幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="124">正是为了弥补第四幻觉的纰漏，他们又创造了第五幻觉。</p>
 <div class="ebook-page" id="mobi-page-125" data-page="125"><span>第 125 页</span></div>
-<p data-page="125">5.资格的幻觉</p>
+<h2 data-volume="5" data-page="125">5.资格的幻觉</h2>
 <p data-page="125">第五幻觉是：</p>
 <p data-page="125">资格存在</p>
 <p data-page="125">匮乏存在的观念迅速地、不可避免地导向下一个幻觉。</p>
@@ -12890,7 +12777,7 @@
 <p data-page="125">他们又是正确的。但可惜他们又犯了一个错误。第五幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="125">正是为了弥补第五幻觉的纰漏，他们又创造了第六幻觉。</p>
 <div class="ebook-page" id="mobi-page-126" data-page="126"><span>第 126 页</span></div>
-<p data-page="126">6.审判的幻觉</p>
+<h2 data-volume="5" data-page="126">6.审判的幻觉</h2>
 <p data-page="126">第六幻觉是：</p>
 <p data-page="126">审判存在</p>
 <p data-page="126">你们认为，若要获得不足够的东西（包括神），你们必须先完成某些事情；这种观点导致你们不得不回答一些难题：怎样判断一个人是否具备了资格呢？缺乏资格将会引发什么后果？</p>
@@ -12938,7 +12825,7 @@
 <p data-page="126">他们又是正确的。但可惜他们又犯了一个错误。第六幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="126">正是为了弥补第六幻觉的纰漏，他们又创造了第七幻觉。</p>
 <div class="ebook-page" id="mobi-page-127" data-page="127"><span>第 127 页</span></div>
-<p data-page="127">7.天谴的幻觉</p>
+<h2 data-volume="5" data-page="127">7.天谴的幻觉</h2>
 <p data-page="127">第七幻觉是：</p>
 <p data-page="127">天谴存在</p>
 <p data-page="127">审判肯定有后果。如果审判真的存在，那必然是有原因的。</p>
@@ -13011,7 +12898,7 @@
 <p data-page="127">他们又是正确的。但可惜他们又犯了一个错误。第七幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="127">正是为了弥补第七幻觉的纰漏，他们又创造了第八幻觉。</p>
 <div class="ebook-page" id="mobi-page-128" data-page="128"><span>第 128 页</span></div>
-<p data-page="128">8.条件的幻觉</p>
+<h2 data-volume="5" data-page="128">8.条件的幻觉</h2>
 <p data-page="128">第八幻觉是：</p>
 <p data-page="128">条件存在</p>
 <p data-page="128">天谴若是存在，那么关于爱，肯定有些你们不了解的地方。</p>
@@ -13066,7 +12953,7 @@
 <p data-page="128">他们又是正确的。但可惜他们又犯了一个错误。第八幻觉其实是一种服务于特定目标的手段，他们非但没有看穿这个幻觉，利用它来实现目标，反而认为能够纠正它的纰漏。</p>
 <p data-page="128">正是为了弥补第八幻觉的纰漏，他们又创造了第九幻觉。</p>
 <div class="ebook-page" id="mobi-page-129" data-page="129"><span>第 129 页</span></div>
-<p data-page="129">9.等级的幻觉</p>
+<h2 data-volume="5" data-page="129">9.等级的幻觉</h2>
 <p data-page="129">第九幻觉是：</p>
 <p data-page="129">等级存在</p>
 <p data-page="129">人类得出的结论是，如果条件性存在，那么一个人只有了解各种条件，才能享受和创造自己想要的现世生活或者阴间生活。</p>
@@ -13141,7 +13028,7 @@
 <p data-page="129">正是为了弥补第九幻觉的纰漏，他们又创造了第十幻觉。</p>
 <p data-page="129">[1] Namaste是印度传统问候语，具体含义即下文提及的“我内心的神向你内心的神致敬”。</p>
 <div class="ebook-page" id="mobi-page-130" data-page="130"><span>第 130 页</span></div>
-<p data-page="130">10.无知的幻觉</p>
+<h2 data-volume="5" data-page="130">10.无知的幻觉</h2>
 <p data-page="130">第十幻觉是：</p>
 <p data-page="130">无知存在</p>
 <p data-page="130">慢慢地，随着幻觉一个个叠加到最后，生活变得越来越难以理解。人类产生的疑问越来越多，却始终找不到答案。如果这个是真的，为什么会那样？如果那个是真的，为什么会这样？不用多久，哲学家们和老师们开始摊开他们的双手。“我们不知道，”他们说，“而且我们还不知道是否有可能知道。”</p>
@@ -13199,9 +13086,9 @@
 <p data-page="130">9.一样东西不可能比其自身高级。</p>
 <p data-page="130">10.你们已经知道所有这些。</p>
 <div class="ebook-page" id="mobi-page-131" data-page="131"><span>第 131 页</span></div>
-<p data-page="131">第二部分 掌握幻觉</p>
+<h2 data-volume="5" data-page="131">第二部分 掌握幻觉</h2>
 <div class="ebook-page" id="mobi-page-132" data-page="132"><span>第 132 页</span></div>
-<p data-page="132">11.教育好你们的孩子</p>
+<h2 data-volume="5" data-page="132">11.教育好你们的孩子</h2>
 <p data-page="132">把这些真相传授给你们的孩子。</p>
 <p data-page="132">让你们的孩子明白，他们的快乐不依赖于任何外在因素，不依赖于任何人、地方或者事物，真正的快乐来自内心。让他们明白，他们是自足的。</p>
 <p data-page="132">只要让他们明白这个道理，你们就能把他们教得很好。</p>
@@ -13260,7 +13147,7 @@
 <p data-page="132">你们的学校应该以概念而不是学科为基础，核心的概念包括觉悟、诚实、负责，次要一些的概念则有透明度、分享、自由、充分的自我表达、感情纽带和一体中的多元性。</p>
 <p data-page="132">把这些传授给你们的孩子，你们就能把他们教得很好。最重要的是，要教他们认识幻觉，如何——以及为何——带着幻觉去生活，而不是生活在幻觉之中。</p>
 <div class="ebook-page" id="mobi-page-133" data-page="133"><span>第 133 页</span></div>
-<p data-page="133">12.识破幻觉</p>
+<h2 data-volume="5" data-page="133">12.识破幻觉</h2>
 <p data-page="133">既然幻觉显得如此真实，你们要怎样才能识破它呢？既然它其实是幻觉，又怎么会显得如此真实呢？</p>
 <p data-page="133">在觉悟逐步进化的过程中，人类开始提出这些问题。现在答案就要出现，而你们终将走出无知的幻觉。</p>
 <p data-page="133">我现在就把答案说出来供你们参考。</p>
@@ -13337,7 +13224,7 @@
 <p data-page="133">又或者你们的神学理论本来就很搞笑？</p>
 <p data-page="133">这只有你们知道。</p>
 <div class="ebook-page" id="mobi-page-134" data-page="134"><span>第 134 页</span></div>
-<p data-page="134">13.理解幻觉的功能</p>
+<h2 data-volume="5" data-page="134">13.理解幻觉的功能</h2>
 <p data-page="134">有一种办法可以终结困惑和识破幻觉，那就是利用幻觉。</p>
 <p data-page="134">发现能够轻易操控幻觉以后，你们将会明白它不是真实的。</p>
 <p data-page="134">你们也许会说，你们无法做到这一点。你们也许会说，这件事情太复杂了，不是你们力所能及的。然而人类每天都在有意识地创造各种幻觉，并生活在它们当中。</p>
@@ -13368,7 +13255,7 @@
 <p data-page="134">你们生活中的每一刻都是神圣的时刻，都是创造的时刻。每一刻都是新的开始。你们在每一刻重生。</p>
 <p data-page="134">这便是你们通往大师境界的旅途。这段旅途将引领你们走出你们亲手创造的噩梦，走近你们的生活本来就应该成为的美梦。这段旅途将引领你们和造物主相遇。</p>
 <div class="ebook-page" id="mobi-page-135" data-page="135"><span>第 135 页</span></div>
-<p data-page="135">14.思考幻觉</p>
+<h2 data-volume="5" data-page="135">14.思考幻觉</h2>
 <p data-page="135">一直以来有人说，人类达到大师境界以后，没有什么事情能让他们不快乐。一直以来也有人说，大师能够达到那种境界，是因为他们掌握了一个大秘密。</p>
 <p data-page="135">我早就告诉过你们这个秘密，只是没有将它描绘为“秘密”而已。你们也许还不明白，这个道理是一切的关键。</p>
 <p data-page="135">我再把道理告诉你们吧。秘密就是下面这个句子：</p>
@@ -13422,7 +13309,7 @@
 <p data-page="135">现在我要请你来和造物主相会。</p>
 <p data-page="135">你将会在自己的内心找到造物主。</p>
 <div class="ebook-page" id="mobi-page-136" data-page="136"><span>第 136 页</span></div>
-<p data-page="136">15.利用幻觉</p>
+<h2 data-volume="5" data-page="136">15.利用幻觉</h2>
 <p data-page="136">为了准备和造物主相会，你们最好离开各种幻觉，包括你们和造物主彼此分离的幻觉。</p>
 <p data-page="136">那是你们正在做的事。那正是这一系列与神对话的用意所在。因为现在你们追求的是带着幻觉生活，而非生活在幻觉当中。正是这种诚恳的追求把你们带到这里，把你们带来和我交流。</p>
 <p data-page="136">我前面已经对你们说过，每个幻觉都有缺陷。这本应让你们知道幻觉是假的，但人类内心深处知道，他们不能放弃这些幻觉，否则有些非常重要的东西将会终结。</p>
@@ -13768,7 +13655,7 @@
 <p data-page="136">[1] 参见《圣经·路加福音》23:32-43 。</p>
 <p data-page="136">[2] 即I am that I am，出自《圣经·出埃及记》3:14。</p>
 <div class="ebook-page" id="mobi-page-137" data-page="137"><span>第 137 页</span></div>
-<p data-page="137">16.再造现实</p>
+<h2 data-volume="5" data-page="137">16.再造现实</h2>
 <p data-page="137">在通往永恒、迈向大师境界的路上，你将发现自己在生活中要面对许多不同的境况和发展阶段，其中有一些是你所不欢迎的。在这样的时刻，你千万不要像绝大多数人一样，他们做的第一件事是想办法弄清楚那到底意味着什么。</p>
 <p data-page="137">有些人认为事情的发生必定有原因，所以他们试图弄清楚原因是什么。还有人说某些事情是“征兆”。于是他们想要知道那种征兆泄漏了什么天机。</p>
 <p data-page="137">这两种人的动机是一样的，就是想明白他们生活里的事件和经验有什么意义。但其实所有事情根本没有任何意义。生活里的遭遇和经验没有隐藏的真相。谁把真相藏起来呢？为什么要藏起来呢？</p>
@@ -13886,9 +13773,9 @@
 <p data-page="137">一直以来，你们反复地将这个经验带给自己，让自己拥有这个经验。这是你们的回忆的过程。</p>
 <p data-page="137">现在你有机会让这些道理变成切身的经验，用全新的现实来取代你们的幻觉。这就是我前面说过的地球上的生命大转变。因而，我曾启发某个人说过：“于是道成肉身，从此生活在我们之间。”</p>
 <div class="ebook-page" id="mobi-page-138" data-page="138"><span>第 138 页</span></div>
-<p data-page="138">第三部分 与内在造物主相遇</p>
+<h2 data-volume="5" data-page="138">第三部分 与内在造物主相遇</h2>
 <div class="ebook-page" id="mobi-page-139" data-page="139"><span>第 139 页</span></div>
-<p data-page="139">17.控制你的身体</p>
+<h2 data-volume="5" data-page="139">17.控制你的身体</h2>
 <p data-page="139">要让前面说过的道理“道成肉身”，也就是让它们不再仅仅是文字，而是在物质世界中得到落实，你必须注意自己的肉身。</p>
 <p data-page="139">你与神的合一，与内在造物主的相遇，始于认识你的身体，理解你的身体，尊重你的身体，以及好好利用你的身体原定的机能。</p>
 <p data-page="139">要做到这一点，你首先要理解的是，你不是你的身体。你控制着你的身体，用你的身体生活，通过你的身体在物质世界里行动。但你不是身体本身。</p>
@@ -13919,7 +13806,7 @@
 <p data-page="139">所以书中建议你锻炼身体也就不奇怪了。饮食方面你也要注意。其实你自己知道最好的饮食是什么；当你靠近各种食物，请仔细聆听你的身体，你立刻就能明白哪些该吃，哪些不该吃。</p>
 <p data-page="139">你只要把手放到食物上慢慢移动就知道了。你的身体将会立刻知道那种食物是不是有益于维持你的身体的机能，有助于实现你的灵魂的目标。你将能够察觉到内中的区别。你不需要去读饮食保健图书，不需要参加课程，不需要找人来当顾问或者给你建议。你只需要聆听自己的身体，然后遵从它的建议。</p>
 <div class="ebook-page" id="mobi-page-140" data-page="140"><span>第 140 页</span></div>
-<p data-page="140">18.控制你的情绪</p>
+<h2 data-volume="5" data-page="140">18.控制你的情绪</h2>
 <p data-page="140">要通过与内在造物主相遇来实现与神合一，第一步是好好照顾你的身体，第二步是控制你的情绪。这很简单，只要明白情绪是什么就可以做到。情绪无非是移动的能量。</p>
 <p data-page="140">你可以控制这种能量，让它向上或者往下流动。</p>
 <p data-page="140">如果让这种能量往下流动，让它保持在最低处，那么你就制造出了消极的情绪。如果你让它往上流动，让它保持在最高处，那么你就制造出了积极的情绪。</p>
@@ -13942,7 +13829,7 @@
 <p data-page="140">我已经在《与神对话》（全三卷）、《与神为友》和本书中，也在其他许多时候通过其他许多信息源，详细地解释了如何做到这一点。此处只是简单提醒你们忆起这个事实。</p>
 <p data-page="140">忆起如何照顾身体和控制情绪之后，你现在可以踏出和内在造物主相遇的第三步了。</p>
 <div class="ebook-page" id="mobi-page-141" data-page="141"><span>第 141 页</span></div>
-<p data-page="141">19.培育自觉</p>
+<h2 data-volume="5" data-page="141">19.培育自觉</h2>
 <p data-page="141">你已经准备得差不多啦，现在你只要自觉地与内在造物主相遇，便能经验与神的合一。</p>
 <p data-page="141">你可能在身体上或者精神上经验到这种相遇，也可能两个方面同时经验到。你也许喜极而泣，兴奋得浑身发抖，或者因为狂喜而前后摇摆。或者有朝一日，你只是安安静静地恍然大悟，默默地意识到你现在已经知道。</p>
 <p data-page="141">你知道什么是幻觉，什么是真相。</p>
@@ -13988,7 +13875,7 @@
 <p data-page="141">然后你们将会来到至高的神圣境地。你们将会感到情绪很高涨，觉得自己、别人和生活中的一切都很高尚。</p>
 <p data-page="141">到时候你们也将为生活创造出前所未有的贡献。</p>
 <div class="ebook-page" id="mobi-page-142" data-page="142"><span>第 142 页</span></div>
-<p data-page="142">20.造物主的消息</p>
+<h2 data-volume="5" data-page="142">20.造物主的消息</h2>
 <p data-page="142">有过一次与内在造物主相遇的经验之后，你将会忆起造物主的消息，因为它就是你自己的心的消息。</p>
 <p data-page="142">它就是每次你怀着爱与别人对望时你的心所歌唱的消息。它就是每次你看见苦难时你的心所哭喊的消息。</p>
 <p data-page="142">这是你要送给世界的消息，是你在找到真我之后留给世界的消息。</p>
@@ -14029,7 +13916,7 @@
 <p data-page="142">你会怎么说呢？</p>
 <p data-page="142">[1] 参见第9章注释1。</p>
 <div class="ebook-page" id="mobi-page-143" data-page="143"><span>第 143 页</span></div>
-<p data-page="143">21.把握恩宠时刻</p>
+<h2 data-volume="5" data-page="143">21.把握恩宠时刻</h2>
 <p data-page="143">现在你应该做出决定。现在到了选择的时候。你，以及你们人类，已经来到一个十字路口。</p>
 <p data-page="143">你们要选择在接下来几天、几个星期、几个月和几年里，你们想要在地球上过着什么样的生活，或者说你们到底还要不要在地球上生活。</p>
 <p data-page="143">你们可以选择继续生活在你们亲手创造的、非常逼真的幻觉里。你们也可以选择走出幻觉，识破幻觉的本质，利用幻觉来经验地球上的天堂，经验你们的真实身份的终极实在。</p>
@@ -14127,13 +14014,13 @@ function currentRank(level){return level<2?'见习观察员':level<4?'心智学�
 function showReward(message){const t=$('#toast');t.innerHTML=`<span class="toast-emoji">✨</span>${escapeHtml(message)}`;t.classList.add('show');$('#questbar').classList.remove('quest-done');void $('#questbar').offsetWidth;$('#questbar').classList.add('quest-done');setTimeout(()=>t.classList.remove('show'),2400)}
 function setXP(value,reason){const before=Number(localStorage.getItem('yueban-dialogues-xp')||0);const after=Math.max(0,before+value);localStorage.setItem('yueban-dialogues-xp',after);renderAdventure();if(value>0&&reason)showReward(`${reason} · +${value} 星火`)}
 function renderAdventure(){const xp=Number(localStorage.getItem('yueban-dialogues-xp')||0);const level=Math.floor(xp/100)+1;const within=xp%100;$('#xpTotal').textContent=xp;$('#xpCurrent').textContent=within;$('#xpProgress').style.width=within+'%';$('#levelOrb').textContent=level;const rank=currentRank(level);$('#levelName').textContent=rank;$('#rankLabel').textContent=rank;const completed=lessonData.filter((_,i)=>quizCorrect[i]&&actionCards[i]).length;$('#chapterCount').textContent=`${completed} / ${lessonData.length} 关`;$('#maxProgress').textContent=maxSeen+'%';document.querySelectorAll('.badge-chip').forEach(b=>b.classList.toggle('unlocked',xp>=Number(b.dataset.badge)))}
-function drawMap(){const map=$('#chapterMap');map.innerHTML='';adventureHeadings.forEach((h,i)=>{const button=document.createElement('button');const major=h.tagName==='H1';const chapterIndex=chapterStops.indexOf(h);const done=chapterIndex>=0&&visitedChapters.has('c'+chapterIndex);const page=pageNumberByHeading.get(h)||1;button.className='map-node'+(major?' major':'')+(done?' done':'');button.dataset.heading=i;button.innerHTML=`<span class="node-dot">${done?'✓':major?'✦':'·'}</span><span class="node-label">${escapeHtml(h.textContent.trim())}</span><span class="node-page">${page}页</span>`;button.onclick=()=>{if(!document.body.classList.contains('raw-mode')){const target=Math.max(0,Number(h.dataset.volume||1)-1);selectLesson(Math.min(lessonData.length-1,target))}else h.scrollIntoView({behavior:'smooth',block:'start'});if(matchMedia('(max-width:720px)').matches)document.body.classList.remove('toc-open')};map.append(button)});}
+function drawMap(){const map=$('#chapterMap');map.innerHTML='';adventureHeadings.forEach((h,i)=>{const button=document.createElement('button');const major=h.tagName==='H1';const chapterIndex=chapterStops.indexOf(h);const done=chapterIndex>=0&&visitedChapters.has('c'+chapterIndex);const page=pageNumberByHeading.get(h)||1;button.className='map-node'+(major?' major':'')+(done?' done':'');button.dataset.heading=i;button.innerHTML=`<span class="node-dot">${done?'✓':major?'✦':'·'}</span><span class="node-label">${escapeHtml(h.textContent.trim())}</span><span class="node-page">${page}页</span>`;button.onclick=()=>{setReaderMode('raw');if(window.parent!==window)window.parent.postMessage({type:'yueban:mode-changed',mode:'raw'},'*');h.scrollIntoView({behavior:'smooth',block:'start'});if(matchMedia('(max-width:720px)').matches)document.body.classList.remove('toc-open')};map.append(button)});}
 function rebuildToc(){const title=$('#docTitle').textContent.trim();adventureHeadings=[...document.querySelectorAll('#article h1,#article h2')].filter((h,i)=>!(i===0&&h.tagName==='H2'&&h.textContent.trim()===title));adventureHeadings.forEach((h,i)=>h.id='trail-'+i);chapterStops=[...document.querySelectorAll('#article h2')].filter(h=>h.textContent.trim()!==title);pageNumberByHeading=new Map();pageBlocks=[];totalChars=0;let currentPage=1;for(const node of $('#article').children){if(node.classList.contains('ebook-page'))currentPage=Number(node.dataset.page)||currentPage;node.dataset.page=node.dataset.page||String(currentPage);const text=(node.textContent||'').replace(/\s/g,'');const start=totalChars;const end=start+text.length;pageBlocks.push({node,start,end,page:Number(node.dataset.page)});if(adventureHeadings.includes(node))pageNumberByHeading.set(node,Number(node.dataset.page)||1);totalChars=end}totalPages=Math.max(1,...pageBlocks.map(b=>b.page));$('#totalPages').textContent=totalPages;$('#pageNumber').max=totalPages;drawMap();updateAdventure()}
-function goToPage(value){setReaderMode('raw');const page=Math.max(1,Math.min(totalPages,Number(value)||1));$('#pageNumber').value=page;const block=pageBlocks.find(b=>b.page>=page)||pageBlocks[0];if(block)setTimeout(()=>block.node.scrollIntoView({behavior:'smooth',block:'start'}),40);if(matchMedia('(max-width:720px)').matches)document.body.classList.remove('toc-open')}
+function goToPage(value){setReaderMode('raw');const page=Math.max(1,Math.min(totalPages,Number(value)||1));$('#pageNumber').value=page;const block=pageBlocks.find(b=>b.page===page&&b.node.classList.contains('ebook-page'))||pageBlocks.find(b=>b.page>=page)||pageBlocks[0];if(block)setTimeout(()=>block.node.scrollIntoView({behavior:'smooth',block:'start'}),40);if(matchMedia('(max-width:720px)').matches)document.body.classList.remove('toc-open')}
 $('#tocSearch').addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase();document.querySelectorAll('.map-node').forEach(n=>n.hidden=!n.querySelector('.node-label').textContent.toLocaleLowerCase().includes(q))});
 $('#goPage').onclick=()=>goToPage($('#pageNumber').value);$('#pageNumber').addEventListener('keydown',e=>{if(e.key==='Enter')goToPage(e.target.value)});
 $('#directoryBtn').onclick=()=>{if(matchMedia('(max-width:720px)').matches)document.body.classList.toggle('toc-open');else $('.toc-library').scrollIntoView({behavior:'smooth',block:'start'})};$('#closeToc').onclick=()=>document.body.classList.remove('toc-open');$('#tocShade').onclick=()=>document.body.classList.remove('toc-open');
-function updateAdventure(){if(!document.body.classList.contains('raw-mode')){renderAdventure();return}const docTop=$('#article').getBoundingClientRect().top+window.scrollY;const docHeight=Math.max(1,$('#article').scrollHeight);const scrollable=Math.max(1,docHeight-innerHeight);const raw=Math.max(0,Math.min(100,Math.floor(((window.scrollY-docTop)/scrollable)*100)));const previous=maxSeen;maxSeen=Math.max(maxSeen,raw);localStorage.setItem('yueban-dialogues-progress',String(maxSeen));const milestone=Math.floor(maxSeen/5)*5;$('#progressTop').style.width=maxSeen+'%';$('#progressBottom').style.width=maxSeen+'%';$('#progressText').textContent=maxSeen+'%';$('#questProgress').style.width=(maxSeen%5===0&&maxSeen>0?100:(maxSeen%5)*20)+'%';const next=Math.min(100,(Math.floor(maxSeen/5)+1)*5);$('#nextMilestone').textContent=maxSeen>=100?'完成':next+'%';if(milestone>Math.floor(previous/5)*5){const gained=((milestone-Math.floor(previous/5)*5)/5)*10;setXP(gained,milestone>=100?'主线通关':`抵达 ${milestone}% 探索点`)}const cursor=window.scrollY+innerHeight*.48;let currentPage=1;document.querySelectorAll('#article .ebook-page').forEach(mark=>{if(mark.getBoundingClientRect().top+window.scrollY<=cursor)currentPage=Number(mark.dataset.page)||currentPage});currentPage=Math.min(totalPages,currentPage);$('#pageIndicator').textContent=`电子页 ${currentPage} / ${totalPages}`;if(document.activeElement!==$('#pageNumber'))$('#pageNumber').value=currentPage;let current=-1;adventureHeadings.forEach((h,i)=>{if(h.getBoundingClientRect().top+window.scrollY<=cursor)current=i});document.querySelectorAll('.map-node').forEach((n,i)=>{n.classList.toggle('active',i===current);const chapterIndex=chapterStops.indexOf(adventureHeadings[i]);const done=chapterIndex>=0&&visitedChapters.has('c'+chapterIndex);n.classList.toggle('done',done);n.querySelector('.node-dot').textContent=done?'✓':n.classList.contains('major')?'✦':'·'});if(current>=0){const h=adventureHeadings[current];$('#questTitle').textContent=`探索：${h.textContent.trim()}`;$('#questSubtitle').textContent='读到这里，记得留意哪个想法最打动你'}let currentChapter=-1;chapterStops.forEach((h,i)=>{if(h.getBoundingClientRect().top+window.scrollY<=cursor)currentChapter=i});if(currentChapter>=0){const key='c'+currentChapter;if(!visitedChapters.has(key)){visitedChapters.add(key);localStorage.setItem('yueban-dialogues-visited',JSON.stringify([...visitedChapters]));setXP(12,'新章节已探索')}}renderAdventure()}
+function updateAdventure(){if(!document.body.classList.contains('raw-mode')){renderAdventure();return}const docTop=$('#article').getBoundingClientRect().top+window.scrollY;const docHeight=Math.max(1,$('#article').scrollHeight);const scrollable=Math.max(1,docHeight-innerHeight);const raw=Math.max(0,Math.min(100,Math.floor(((window.scrollY-docTop)/scrollable)*100)));const previous=maxSeen;maxSeen=Math.max(maxSeen,raw);localStorage.setItem('yueban-dialogues-progress',String(maxSeen));const milestone=Math.floor(maxSeen/5)*5;$('#progressTop').style.width=maxSeen+'%';$('#progressBottom').style.width=maxSeen+'%';$('#progressText').textContent=maxSeen+'%';$('#questProgress').style.width=(maxSeen%5===0&&maxSeen>0?100:(maxSeen%5)*20)+'%';const next=Math.min(100,(Math.floor(maxSeen/5)+1)*5);$('#nextMilestone').textContent=maxSeen>=100?'完成':next+'%';if(milestone>Math.floor(previous/5)*5){const gained=((milestone-Math.floor(previous/5)*5)/5)*10;setXP(gained,milestone>=100?'主线通关':`抵达 ${milestone}% 探索点`)}const cursor=window.scrollY+100;let currentPage=1;document.querySelectorAll('#article .ebook-page').forEach(mark=>{if(mark.getBoundingClientRect().top+window.scrollY<=cursor)currentPage=Number(mark.dataset.page)||currentPage});currentPage=Math.min(totalPages,currentPage);$('#pageIndicator').textContent=`电子页 ${currentPage} / ${totalPages}`;if(document.activeElement!==$('#pageNumber'))$('#pageNumber').value=currentPage;let current=-1;adventureHeadings.forEach((h,i)=>{if(h.getBoundingClientRect().top+window.scrollY<=cursor)current=i});document.querySelectorAll('.map-node').forEach((n,i)=>{n.classList.toggle('active',i===current);const chapterIndex=chapterStops.indexOf(adventureHeadings[i]);const done=chapterIndex>=0&&visitedChapters.has('c'+chapterIndex);n.classList.toggle('done',done);n.querySelector('.node-dot').textContent=done?'✓':n.classList.contains('major')?'✦':'·'});if(current>=0){const h=adventureHeadings[current];$('#questTitle').textContent=`探索：${h.textContent.trim()}`;$('#questSubtitle').textContent='读到这里，记得留意哪个想法最打动你'}let currentChapter=-1;chapterStops.forEach((h,i)=>{if(h.getBoundingClientRect().top+window.scrollY<=cursor)currentChapter=i});if(currentChapter>=0){const key='c'+currentChapter;if(!visitedChapters.has(key)){visitedChapters.add(key);localStorage.setItem('yueban-dialogues-visited',JSON.stringify([...visitedChapters]));setXP(12,'新章节已探索')}}renderAdventure()}
 window.addEventListener('scroll',updateAdventure);window.addEventListener('resize',updateAdventure);
 $('#startQuest').onclick=()=>{if(!document.body.classList.contains('raw-mode')){$('#learningGame').scrollIntoView({behavior:'smooth',block:'start'});return}const next=adventureHeadings.find(h=>h.getBoundingClientRect().top>innerHeight*.45)||adventureHeadings[0];if(next)next.scrollIntoView({behavior:'smooth',block:'start'});else $('#article').scrollIntoView({behavior:'smooth'})};
 let activeLesson=0;let quizCorrect=JSON.parse(localStorage.getItem('yueban-dialogues-quiz-correct')||'{}');let actionCards=JSON.parse(localStorage.getItem('yueban-dialogues-actions')||'{}');let selectedAnswer=null;

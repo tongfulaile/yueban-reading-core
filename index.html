@@ -101,10 +101,10 @@
   const savedBook=get(keyBook,'drive');
   let book=books[requestedBook]?requestedBook:(books[savedBook]?savedBook:'drive');
   const savedMode=get(keyMode,'learn');
-  let mode=query.get('mode')==='raw'?'raw':(savedMode==='raw'?'raw':'learn');
+  let mode=['raw','learn'].includes(query.get('mode'))?query.get('mode'):(savedMode==='raw'?'raw':'learn');
   bookSelect.value=book;
   const showToast=message=>{const el=$('#toast');el.textContent=message;el.classList.add('show');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>el.classList.remove('show'),2200)};
-  const pageUrl=next=>(location.protocol==='file:'?'https://tongfulaile.github.io/yueban-reading-core/':'')+books[next].file+'?embedded=1';
+  const pageUrl=next=>(location.protocol==='file:'?'https://tongfulaile.github.io/yueban-reading-core/':'')+books[next].file+'?embedded=1&rev=20261106';
   const updateModeUI=()=>document.querySelectorAll('[data-mode]').forEach(button=>button.classList.toggle('active',button.dataset.mode===mode));
   const sendFrameState=()=>{try{frame.contentWindow.postMessage({type:'yueban:embed'},'*');frame.contentWindow.postMessage({type:'yueban:mode',mode},'*')}catch{}};
   const loadBook=(next,force=false)=>{if(!books[next])return;book=next;bookSelect.value=book;put(keyBook,book);if(force||!frame.src.endsWith(books[book].file))frame.src=pageUrl(book);showView('read')};
@@ -132,7 +132,7 @@
   $('#shareInvite').addEventListener('click',async()=>{if(!navigator.share){showToast('当前浏览器可用“复制共读链接”分享');return}try{await navigator.share({title:'阅伴 · 共读冒险',text:'选一本书，一起读一关、解决一个小问题。',url:inviteUrl()})}catch{}});
   renderSolutions();updateModeUI();
   frame.src=pageUrl(book);
-  const savedView=get('yueban-unified-view','read');showView(['read','quests','ranking','friends','value'].includes(savedView)?savedView:'read');
+  const savedView=get('yueban-unified-view','read');showView(query.has('book')||query.has('mode')?'read':(['read','quests','ranking','friends','value'].includes(savedView)?savedView:'read'));
 })();
 </script>
 </body>
